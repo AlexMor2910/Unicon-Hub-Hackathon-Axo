@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mascotas de Axo</title>
+<style>
+  :root{--ink:#f8fafc;--muted:#b8c4da;--border:#394667;--surface:#0f1629;--raised:#18223d;--mint:#28335c;--cyan:#22d3ee;--violet:#a78bfa;color-scheme:dark}
+  *{box-sizing:border-box}
+  body{margin:0;background:#090d1a;color:var(--ink);font-family:Inter,system-ui,sans-serif;line-height:1.55}
+  main{max-width:1100px;margin:0 auto;padding:24px 16px 64px}
+  h1{font-size:clamp(2rem,5vw,3rem);margin:.2em 0}
+  h2{margin:1.6em 0 .6em}
+  p{color:var(--muted);margin:.3em 0}
+  .card{background:var(--surface);border:1px solid var(--border);border-radius:24px;padding:20px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+  figure{margin:0;background:var(--raised);border-radius:16px;padding:12px;text-align:center}
+  figure img{width:100%;height:auto;display:block}
+  figcaption{font-size:.85rem;color:var(--muted)}
+  .row-title{grid-column:1/-1;margin:.8em 0 0;font-weight:700}
+  .demo{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px;align-items:center}
+  @media (max-width:700px){.demo{grid-template-columns:1fr}}
+  .stage{background:var(--raised);border-radius:20px;padding:16px;display:grid;place-items:center}
+  .stage img{width:min(100%,21rem);height:auto}
+  .controls{display:flex;flex-direction:column;gap:14px}
+  .group{display:flex;flex-wrap:wrap;gap:8px}
+  button{font:inherit;font-weight:700;color:var(--ink);background:var(--mint);border:0;border-radius:12px;padding:10px 14px;cursor:pointer}
+  button[aria-pressed="true"]{background:linear-gradient(90deg,#c4b5fd,#67e8f9);color:#0b1020}
+  button:focus-visible{outline:3px solid var(--cyan);outline-offset:2px}
+  .status{min-height:1.6em;color:var(--ink)}
+  code{background:var(--raised);padding:2px 6px;border-radius:6px}
+</style>
+</head>
+<body>
+<main>
+  <h1>Mascotas de Axo</h1>
+  <p>Vista previa de los tres compañeros y sus cuatro estados. Los SVG se animan solos; si el sistema pide reducir movimiento, se muestran quietos.</p>
+
+  <h2>Demo interactiva</h2>
+  <section class="card demo" aria-label="Demo interactiva">
+    <div class="stage"><img id="live" alt="" /></div>
+    <div class="controls">
+      <div>
+        <p><strong>Elige tu compañero</strong></p>
+        <div class="group" role="group" aria-label="Mascota" id="pick"></div>
+      </div>
+      <div>
+        <p><strong>Simula lo que pasa en un ejercicio</strong></p>
+        <div class="group">
+          <button type="button" data-event="waiting">Esperando respuesta</button>
+          <button type="button" data-event="correct">Respuesta correcta</button>
+          <button type="button" data-event="wrong">Respuesta incorrecta</button>
+        </div>
+      </div>
+      <p class="status" id="status" aria-live="polite"></p>
+    </div>
+  </section>
+
+  <h2>Todos los estados</h2>
+  <section class="card grid" id="all"></section>
+</main>
+<script>
+  const STATE_ES = { idle: "Tranquilo", thinking: "Pensando", celebrate: "Celebrando", encourage: "Dando ánimos" };
+  // Copia de manifest.json, incrustada para que la vista previa funcione al abrirla con doble clic (file://).
+  const manifest = {
+    default: "axolotl",
+    states: ["idle", "thinking", "celebrate", "encourage"],
+    mascots: {
+      axolotl: { name: "Ajolote" },
+      jaguar: { name: "Jaguar" },
+      quetzal: { name: "Quetzal" },
+    },
+  };
+  const src = (id, state) => `${id}/${state}.svg`;
+
+  // Cuadrícula
+  const all = document.getElementById("all");
+  for (const [id, m] of Object.entries(manifest.mascots)) {
+    const t = document.createElement("p");
+    t.className = "row-title";
+    t.textContent = m.name;
+    all.append(t);
+    for (const state of manifest.states) {
+      const f = document.createElement("figure");
+      f.innerHTML = `<img src="${src(id, state)}" alt="${m.name} ${STATE_ES[state].toLowerCase()}"><figcaption>${STATE_ES[state]} · <code>${state}</code></figcaption>`;
+      all.append(f);
+    }
+  }
+
+  // Demo: así debería reaccionar la mascota dentro de la app.
+  const live = document.getElementById("live");
+  const status = document.getElementById("status");
+  const pick = document.getElementById("pick");
+  let mascot = manifest.default;
+  let timer;
+
+  function show(state) {
+    // Se cambia el src completo para que la animación de un solo uso vuelva a empezar.
+    live.src = src(mascot, state) + "?t=" + Date.now();
+    live.alt = `${manifest.mascots[mascot].name} ${STATE_ES[state].toLowerCase()}`;
+  }
+  function react(state, ms, message) {
+    clearTimeout(timer);
+    show(state);
+    status.textContent = message;
+    // Las reacciones de un solo uso regresan a "tranquilo".
+    if (ms) timer = setTimeout(() => show("idle"), ms);
+  }
+
+  for (const [id, m] of Object.entries(manifest.mascots)) {
+    const b = document.createElement("button");
+    b.type = "button";
+    b.textContent = m.name;
+    b.setAttribute("aria-pressed", String(id === mascot));
+    b.addEventListener("click", () => {
+      mascot = id;
+      pick.querySelectorAll("button").forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
+      react("idle", 0, `Ahora te acompaña: ${m.name}.`);
+    });
+    pick.append(b);
+  }
+
+  document.querySelectorAll("[data-event]").forEach((b) =>
+    b.addEventListener("click", () => {
+      const e = b.dataset.event;
+      if (e === "waiting") react("thinking", 0, "Pensando contigo mientras respondes…");
+      if (e === "correct") react("celebrate", 1800, "¡Muy bien! Lo resolviste.");
+      if (e === "wrong") react("encourage", 2200, "Casi. Revisa la pista y vuelve a intentarlo.");
+    })
+  );
+
+  show("idle");
+</script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "viewBox": "0 0 320 224",
+  "default": "axolotl",
+  "states": [
+    "idle",
+    "thinking",
+    "celebrate",
+    "encourage"
+  ],
+  "mascots": {
+    "axolotl": {
+      "name": "Ajolote",
+      "states": {
+        "idle": "mascots/axolotl/idle.svg",
+        "thinking": "mascots/axolotl/thinking.svg",
+        "celebrate": "mascots/axolotl/celebrate.svg",
+        "encourage": "mascots/axolotl/encourage.svg"
+      },
+      "fallback": "mascots/axolotl/idle.svg"
+    },
+    "jaguar": {
+      "name": "Jaguar",
+      "states": {
+        "idle": "mascots/jaguar/idle.svg",
+        "thinking": "mascots/jaguar/thinking.svg",
+        "celebrate": "mascots/jaguar/celebrate.svg",
+        "encourage": "mascots/jaguar/encourage.svg"
+      },
+      "fallback": "mascots/jaguar/idle.svg"
+    },
+    "quetzal": {
+      "name": "Quetzal",
+      "states": {
+        "idle": "mascots/quetzal/idle.svg",
+        "thinking": "mascots/quetzal/thinking.svg",
+        "celebrate": "mascots/quetzal/celebrate.svg",
+        "encourage": "mascots/quetzal/encourage.svg"
+      },
+      "fallback": "mascots/quetzal/idle.svg"
+    }
+  }
+}
