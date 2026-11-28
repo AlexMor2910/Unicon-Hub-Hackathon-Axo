@@ -1,0 +1,280 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://axo-edu.example/contracts/exercise.schema.json",
+  "title": "Axo Exercise Item Schema",
+  "description": "Contrato de datos compartido para ejercicios educativos de Axo (UniconHub Hack 2026). Nota: La API pública debe omitir 'answer_key' y 'explanation' antes de evaluar un intento.",
+  "type": "object",
+  "required": [
+    "id",
+    "skill_id",
+    "subject",
+    "difficulty",
+    "type",
+    "prompt",
+    "answer_key",
+    "hints",
+    "explanation",
+    "source"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)+$",
+      "description": "Identificador único estable en formato kebab-case (ej. math-suma-001)."
+    },
+    "skill_id": {
+      "type": "string",
+      "enum": [
+        "suma",
+        "resta",
+        "comparacion",
+        "multiplicacion",
+        "division",
+        "fracciones",
+        "decimales",
+        "cambio",
+        "varios-pasos",
+        "datos",
+        "secuencia",
+        "inferencia",
+        "idea",
+        "opinion",
+        "vocab",
+        "accent",
+        "bv",
+        "csz",
+        "gj",
+        "h",
+        "homophones",
+        "other"
+      ],
+      "description": "ID de habilidad existente en Axo.html."
+    },
+    "subject": {
+      "type": "string",
+      "enum": [
+        "math",
+        "reading",
+        "spelling"
+      ],
+      "description": "Materia principal del ejercicio."
+    },
+    "difficulty": {
+      "type": "string",
+      "enum": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "description": "Estimación experta de dificultad (no calibrada psicométricamente)."
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "multiple_choice",
+        "numeric",
+        "short_text"
+      ],
+      "description": "Tipo de interacción y regla de calificación."
+    },
+    "prompt": {
+      "type": "string",
+      "minLength": 5,
+      "description": "Consigna o pregunta presentada al estudiante."
+    },
+    "passage": {
+      "type": "object",
+      "required": [
+        "passage_id",
+        "title",
+        "paragraphs"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "passage_id": {
+          "type": "string",
+          "minLength": 2
+        },
+        "title": {
+          "type": "string",
+          "minLength": 2
+        },
+        "paragraphs": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "text"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^p[0-9]+$"
+              },
+              "text": {
+                "type": "string",
+                "minLength": 10
+              }
+            }
+          }
+        }
+      }
+    },
+    "evidence_paragraphs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^p[0-9]+$"
+      },
+      "uniqueItems": true,
+      "description": "Párrafos del pasaje donde se localiza la evidencia (solo lectura)."
+    },
+    "options": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 5,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "text"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "text": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "description": "Opciones de respuesta requeridas cuando type es multiple_choice."
+    },
+    "answer_key": {
+      "type": "object",
+      "description": "Clave de respuesta específica por tipo (privada en backend; nunca exponer en payload público).",
+      "oneOf": [
+        {
+          "required": [
+            "choice_id"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "choice_id": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "required": [
+            "value",
+            "tolerance"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "value": {
+              "type": "number"
+            },
+            "tolerance": {
+              "type": "number",
+              "minimum": 0
+            },
+            "unit": {
+              "type": "string"
+            }
+          }
+        },
+        {
+          "required": [
+            "accepted",
+            "case_sensitive",
+            "strip_accents"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "accepted": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "case_sensitive": {
+              "type": "boolean"
+            },
+            "strip_accents": {
+              "type": "boolean"
+            }
+          }
+        }
+      ]
+    },
+    "hints": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "string",
+        "minLength": 5
+      },
+      "description": "Pistas progresivas ordenadas que guían el razonamiento sin revelar la respuesta final."
+    },
+    "explanation": {
+      "type": "string",
+      "minLength": 10,
+      "description": "Explicación paso a paso mostrada tras enviar la respuesta."
+    },
+    "source": {
+      "type": "string",
+      "minLength": 5,
+      "description": "Procedencia y licencia del reactivo."
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "multiple_choice"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "options"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "subject": {
+            "const": "reading"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "passage",
+          "evidence_paragraphs"
+        ]
+      }
+    }
+  ]
+}
