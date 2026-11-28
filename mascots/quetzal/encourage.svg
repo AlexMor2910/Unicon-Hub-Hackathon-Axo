@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 224" role="img" aria-label="Un quetzal dando ánimos" class="anim st-encourage">
+<title>Un quetzal dando ánimos</title>
+<style>.anim,.anim *{transform-box:fill-box}
+.char{transform-origin:50% 100%}
+.shadow{transform-origin:50% 50%}
+.eye{transform-origin:50% 50%}
+.st-idle .char{animation:breathe 3.2s ease-in-out infinite}
+.st-idle .eye,.st-encourage .eye{animation:blink 4.6s infinite}
+.sway-l{transform-origin:100% 60%;animation:sway-l 3.2s ease-in-out infinite}
+.sway-r{transform-origin:0% 60%;animation:sway-r 3.2s ease-in-out infinite}
+.sway-tail{transform-origin:0% 80%;animation:sway-r 2.6s ease-in-out infinite}
+.st-thinking .head{transform-origin:50% 90%;animation:ponder 2.8s ease-in-out infinite}
+.st-thinking .dot{animation:dot 1.8s ease-in-out infinite;opacity:.15}
+.st-thinking .dot:nth-of-type(2){animation-delay:.3s}
+.st-thinking .dot:nth-of-type(3){animation-delay:.6s}
+.st-celebrate .char{animation:hop .6s cubic-bezier(.3,.7,.4,1) 2}
+.st-celebrate .shadow{animation:squash .6s cubic-bezier(.3,.7,.4,1) 2}
+.st-celebrate .spark{transform-origin:50% 50%;animation:twinkle .9s ease-in-out 3 both}
+.st-celebrate .spark:nth-of-type(2){animation-delay:.2s}
+.st-celebrate .spark:nth-of-type(3){animation-delay:.4s}
+.st-celebrate .wing-l{transform-origin:100% 20%;animation:flap-l .3s ease-in-out 4}
+.st-celebrate .wing-r{transform-origin:0% 20%;animation:flap-r .3s ease-in-out 4}
+.st-encourage .head{transform-origin:50% 90%;animation:nod .8s ease-in-out 2}
+.st-encourage .heart{transform-origin:50% 50%;animation:pulse 1.2s ease-in-out 3}
+@keyframes breathe{0%,100%{transform:scale(1,1)}50%{transform:scale(1.015,.985)}}
+@keyframes blink{0%,93%,100%{transform:scaleY(1)}96%{transform:scaleY(.1)}}
+@keyframes sway-l{0%,100%{transform:rotate(0)}50%{transform:rotate(-4deg)}}
+@keyframes sway-r{0%,100%{transform:rotate(0)}50%{transform:rotate(4deg)}}
+@keyframes ponder{0%,100%{transform:rotate(-3deg)}50%{transform:rotate(-5deg) translateY(-1px)}}
+@keyframes dot{0%,15%{opacity:.15}45%,100%{opacity:1}}
+@keyframes hop{0%,100%{transform:translateY(0) scale(1,1)}15%{transform:translateY(0) scale(1.04,.95)}45%{transform:translateY(-20px) scale(.98,1.03)}75%{transform:translateY(0) scale(1.03,.97)}}
+@keyframes squash{0%,100%{transform:scale(1)}45%{transform:scale(.8);opacity:.7}}
+@keyframes twinkle{0%{transform:scale(.3);opacity:0}50%{transform:scale(1.15);opacity:1}100%{transform:scale(1);opacity:1}}
+@keyframes flap-l{0%,100%{transform:rotate(0)}50%{transform:rotate(18deg)}}
+@keyframes flap-r{0%,100%{transform:rotate(0)}50%{transform:rotate(-18deg)}}
+@keyframes nod{0%,100%{transform:rotate(0)}30%{transform:rotate(4deg) translateY(2px)}60%{transform:rotate(-2deg)}}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.18)}}
+@media (prefers-reduced-motion:reduce){.anim *{animation:none!important}.dot,.spark{opacity:1!important}}</style>
+<ellipse class="shadow" cx="162" cy="199" rx="104" ry="11" fill="#b7ddd3"/><g class="char">
+  <g class="sway-tail">
+    <path d="M196 176 Q244 188 298 204" fill="none" stroke="#22a873" stroke-width="10" stroke-linecap="round"/>
+    <path d="M192 184 Q234 202 284 213" fill="none" stroke="#178a5c" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  <path d="M148 190 V199 M170 190 V199" stroke="#f2a33a" stroke-width="5" stroke-linecap="round"/>
+  <ellipse cx="159" cy="166" rx="50" ry="34" fill="#2fb37c"/>
+  <ellipse cx="159" cy="177" rx="30" ry="21" fill="#e4474f"/>
+  <g class="wing-l"><path d="M120 146 Q96 162 104 192 Q128 184 136 160 Z" fill="#1f9d6b"/></g>
+  <g class="wing-r"><path d="M198 146 Q222 162 214 192 Q190 184 182 160 Z" fill="#1f9d6b"/></g>
+  <g class="head">
+    <g class="sway-r"><path d="M138 66 Q146 36 166 28 Q160 46 174 38 Q172 54 186 54 Q174 70 138 66 Z" fill="#2fb37c"/></g>
+    <ellipse cx="160" cy="110" rx="60" ry="50" fill="#3cc48a"/>
+    <ellipse cx="117" cy="124" rx="9" ry="5.5" fill="#f28aa0"/>
+    <ellipse cx="203" cy="124" rx="9" ry="5.5" fill="#f28aa0"/>
+    <circle class="eye" cx="136" cy="106" r="5.5" fill="#342749"/><circle class="eye" cx="184" cy="106" r="5.5" fill="#342749"/><path d="M128 95 Q136 89 144 95 M176 95 Q184 89 192 95" fill="none" stroke="#342749" stroke-width="3" stroke-linecap="round"/>
+    <path d="M151 118 Q160 114 169 118 L160 133 Z" fill="#f6c445" stroke="#d99a1e" stroke-width="2" stroke-linejoin="round"/>
+  </g>
+</g>
+<path class="heart" d="M252 60 C236 49 236 34 246 34 C250 34 252 38 252 41 C252 38 254 34 258 34 C268 34 268 49 252 60 Z" fill="#f06f9f"/>
+</svg>

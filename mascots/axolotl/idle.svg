@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 224" role="img" aria-label="Axo, un ajolote tranquilo" class="anim st-idle">
+<title>Axo, un ajolote tranquilo</title>
+<style>.anim,.anim *{transform-box:fill-box}
+.char{transform-origin:50% 100%}
+.shadow{transform-origin:50% 50%}
+.eye{transform-origin:50% 50%}
+.st-idle .char{animation:breathe 3.2s ease-in-out infinite}
+.st-idle .eye,.st-encourage .eye{animation:blink 4.6s infinite}
+.sway-l{transform-origin:100% 60%;animation:sway-l 3.2s ease-in-out infinite}
+.sway-r{transform-origin:0% 60%;animation:sway-r 3.2s ease-in-out infinite}
+.sway-tail{transform-origin:0% 80%;animation:sway-r 2.6s ease-in-out infinite}
+.st-thinking .head{transform-origin:50% 90%;animation:ponder 2.8s ease-in-out infinite}
+.st-thinking .dot{animation:dot 1.8s ease-in-out infinite;opacity:.15}
+.st-thinking .dot:nth-of-type(2){animation-delay:.3s}
+.st-thinking .dot:nth-of-type(3){animation-delay:.6s}
+.st-celebrate .char{animation:hop .6s cubic-bezier(.3,.7,.4,1) 2}
+.st-celebrate .shadow{animation:squash .6s cubic-bezier(.3,.7,.4,1) 2}
+.st-celebrate .spark{transform-origin:50% 50%;animation:twinkle .9s ease-in-out 3 both}
+.st-celebrate .spark:nth-of-type(2){animation-delay:.2s}
+.st-celebrate .spark:nth-of-type(3){animation-delay:.4s}
+.st-celebrate .wing-l{transform-origin:100% 20%;animation:flap-l .3s ease-in-out 4}
+.st-celebrate .wing-r{transform-origin:0% 20%;animation:flap-r .3s ease-in-out 4}
+.st-encourage .head{transform-origin:50% 90%;animation:nod .8s ease-in-out 2}
+.st-encourage .heart{transform-origin:50% 50%;animation:pulse 1.2s ease-in-out 3}
+@keyframes breathe{0%,100%{transform:scale(1,1)}50%{transform:scale(1.015,.985)}}
+@keyframes blink{0%,93%,100%{transform:scaleY(1)}96%{transform:scaleY(.1)}}
+@keyframes sway-l{0%,100%{transform:rotate(0)}50%{transform:rotate(-4deg)}}
+@keyframes sway-r{0%,100%{transform:rotate(0)}50%{transform:rotate(4deg)}}
+@keyframes ponder{0%,100%{transform:rotate(-3deg)}50%{transform:rotate(-5deg) translateY(-1px)}}
+@keyframes dot{0%,15%{opacity:.15}45%,100%{opacity:1}}
+@keyframes hop{0%,100%{transform:translateY(0) scale(1,1)}15%{transform:translateY(0) scale(1.04,.95)}45%{transform:translateY(-20px) scale(.98,1.03)}75%{transform:translateY(0) scale(1.03,.97)}}
+@keyframes squash{0%,100%{transform:scale(1)}45%{transform:scale(.8);opacity:.7}}
+@keyframes twinkle{0%{transform:scale(.3);opacity:0}50%{transform:scale(1.15);opacity:1}100%{transform:scale(1);opacity:1}}
+@keyframes flap-l{0%,100%{transform:rotate(0)}50%{transform:rotate(18deg)}}
+@keyframes flap-r{0%,100%{transform:rotate(0)}50%{transform:rotate(-18deg)}}
+@keyframes nod{0%,100%{transform:rotate(0)}30%{transform:rotate(4deg) translateY(2px)}60%{transform:rotate(-2deg)}}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.18)}}
+@media (prefers-reduced-motion:reduce){.anim *{animation:none!important}.dot,.spark{opacity:1!important}}</style>
+<ellipse class="shadow" cx="162" cy="199" rx="104" ry="11" fill="#b7ddd3"/><g class="char">
+  <g class="sway-tail"><path d="M180 175 Q214 185 246 155 Q244 194 187 194 Z" fill="#f3a3bd"/></g>
+  <ellipse cx="159" cy="171" rx="57" ry="30" fill="#ed96b6"/>
+  <path d="M113 174 Q94 184 108 192 H128 M205 174 Q224 184 210 192 H190" fill="#f8bdd1"/>
+  <g class="head">
+    <g fill="none" stroke="#dc6394" stroke-width="12" stroke-linecap="round">
+      <g class="sway-l"><path d="M100 106 Q73 87 63 58 M94 118 Q62 112 48 89 M96 130 Q69 135 52 122"/></g>
+      <g class="sway-r"><path d="M220 106 Q247 87 257 58 M226 118 Q258 112 272 89 M224 130 Q251 135 268 122"/></g>
+    </g>
+    <rect x="85" y="76" width="150" height="86" rx="43" fill="#ffc5d8"/>
+    <ellipse cx="113" cy="127" rx="10" ry="6" fill="#ea85ad"/>
+    <ellipse cx="207" cy="127" rx="10" ry="6" fill="#ea85ad"/>
+    <circle class="eye" cx="132" cy="111" r="5.5" fill="#342749"/><circle class="eye" cx="188" cy="111" r="5.5" fill="#342749"/>
+    <path d="M151 123 Q160 133 169 123" fill="none" stroke="#342749" stroke-width="3" stroke-linecap="round"/>
+  </g>
+</g>
+
+</svg>
