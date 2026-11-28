@@ -1,0 +1,2749 @@
+[
+  {
+    "id": "math-suma-001",
+    "skill_id": "suma",
+    "subject": "math",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "prompt": "En una colecta de reciclaje de la preparatoria, el grupo A reunió 148 botellas de PET y el grupo B reunió 175. ¿Cuántas botellas reunieron entre los dos grupos?",
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "313 botellas"
+      },
+      {
+        "id": "opt-b",
+        "text": "323 botellas"
+      },
+      {
+        "id": "opt-c",
+        "text": "223 botellas"
+      },
+      {
+        "id": "opt-d",
+        "text": "213 botellas"
+      }
+    ],
+    "answer_key": {
+      "choice_id": "opt-b"
+    },
+    "hints": [
+      "Suma primero las unidades: 8 + 5. Recuerda que si pasas de 10, debes reagrupar una decena.",
+      "8 + 5 = 13 (pones 3 y llevas 1 decena). Luego suma las decenas: 4 + 7 + 1 = 12 (pones 2 y llevas 1 centena)."
+    ],
+    "explanation": "Al sumar 148 + 175: unidades 8 + 5 = 13 (3 y llevamos 1); decenas 4 + 7 + 1 = 12 (2 y llevamos 1); centenas 1 + 1 + 1 = 3. El total es 323 botellas.",
+    "source": "Equipo Axo — UniconHub Hack 2026 (contenido original en español de México; dificultad estimada por expertos)",
+    "tags": [
+      "aritmetica",
+      "reagrupacion",
+      "contexto-escolar"
+    ]
+  },
+  {
+    "id": "math-suma-002",
+    "skill_id": "suma",
+    "subject": "math",
+    "difficulty": "medium",
+    "type": "numeric",
+    "prompt": "Un taller de robótica recibió tres cajas con tornillos: la primera tiene 365, la segunda 480 y la tercera 295. ¿Cuántos tornillos hay en total?",
+    "answer_key": {
+      "value": 1140,
+      "tolerance": 0,
+      "unit": "tornillos"
+    },
+    "hints": [
+      "Puedes agrupar dos cantidades que formen decenas o centenas exactas primero, como 365 y 295.",
+      "365 + 295 = 660. Ahora solo falta sumar los 480 tornillos de la segunda caja a 660."
+    ],
+    "explanation": "Sumamos las tres cantidades: 365 + 295 = 660; luego 660 + 480 = 1,140 tornillos en total.",
+    "source": "Equipo Axo — UniconHub Hack 2026 (contenido original en español de México; dificultad estimada por expertos)",
+    "tags": [
+      "aritmetica",
+      "tres-sumandos",
+      "numerico"
+    ]
+  },
+  {
+    "id": "math-suma-003",
+    "skill_id": "suma",
+    "subject": "math",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "prompt": "Durante tres semanas, una biblioteca comunitaria prestó 478 libros la primera semana, 635 la segunda y 589 la tercera. ¿Cuál fue el total de préstamos en las tres semanas?",
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "1,692 libros"
+      },
+      {
+        "id": "opt-b",
+        "text": "1,602 libros"
+      },
+      {
+        "id": "opt-c",
+        "text": "1,702 libros"
+      },
+      {
+        "id": "opt-d",
+        "text": "1,712 libros"
+      }
+    ],
+    "answer_key": {
+      "choice_id": "opt-c"
+    },
+    "hints": [
+      "Suma columna por columna empezando por las unidades: 8 + 5 + 9. ¿Cuántas decenas completas se forman?",
+      "8 + 5 + 9 = 22 (escribes 2 y llevas 2 a las decenas). Luego suma 7 + 3 + 8 + 2 en las decenas."
+    ],
+    "explanation": "Unidades: 8 + 5 + 9 = 22 (2 y llevamos 2). Decenas: 7 + 3 + 8 + 2 = 20 (0 y llevamos 2). Centenas: 4 + 6 + 5 + 2 = 17. El resultado es 1,702 libros.",
+    "source": "Equipo Axo — UniconHub Hack 2026 (contenido original en español de México; dificultad estimada por expertos)",
+    "tags": [
+      "aritmetica",
+      "reagrupacion-multiple"
+    ]
+  },
+  {
+    "id": "math-resta-001",
+    "skill_id": "resta",
+    "subject": "math",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "prompt": "Una memoria USB tiene 64 GB de capacidad y ya tiene ocupados 29 GB con proyectos escolares. ¿Cuántos GB quedan disponibles?",
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "45 GB"
+      },
+      {
+        "id": "opt-b",
+        "text": "35 GB"
+      },
+      {
+        "id": "opt-c",
+        "text": "33 GB"
+      },
+      {
+        "id": "opt-d",
+        "text": "93 GB"
+      }
+    ],
+    "answer_key": {
+      "choice_id": "opt-b"
+    },
+    "hints": [
+      "Como 4 es menor que 9 en las unidades, desagrupa una decena del 6 para convertir el 4 en 14.",
+      "Al desagrupar, te quedan 5 decenas y 14 unidades. Resta 14 − 9 en las unidades y 5 − 2 en las decenas."
+    ],
+    "explanation": "Para calcular 64 − 29: pedimos una decena prestada al 6 (queda en 5) y tenemos 14 − 9 = 5 unidades; en las decenas 5 − 2 = 3. Quedan 35 GB disponibles.",
+    "source": "Equipo Axo — UniconHub Hack 2026 (contenido original en español de México; dificultad estimada por expertos)",
+    "tags": [
+      "aritmetica",
+      "sustraccion",
+      "tecnologia"
+    ]
+  },
+  {
+    "id": "math-resta-002",
+    "skill_id": "resta",
+    "subject": "math",
+    "difficulty": "medium",
+    "type": "numeric",
+    "prompt": "La meta diaria de caminata de Valeria es de 8,500 pasos. Al terminar la tarde lleva 5,740 pasos. ¿Cuántos pasos le faltan para alcanzar su meta?",
+    "answer_key": {
+      "value": 2760,
+      "tolerance": 0,
+      "unit": "pasos"
+    },
+    "hints": [
+      "Plantea la diferencia 8,500 − 5,740 o cuenta cuánto le falta a 5,740 para llegar a 6,000 y luego a 8,500.",
+      "De 5,740 a 6,000 faltan 260 pasos. Ahora suma lo que falta de 6,000 a 8,500."
+    ],
+    "explanation": "Restamos 8,500 − 5,740: de 5,740 a 6,000 hay 260 pasos, y de 6,000 a 8,500 hay 2,500 pasos. En total faltan 260 + 2,500 = 2,760 pasos.",
+    "source": "Equipo Axo — UniconHub Hack 2026 (contenido original en español de México; dificultad estimada por expertos)",
+    "tags": [
+      "aritmetica",
+      "diferencia",
+      "numerico"
+    ]
+  },
+  {
+    "id": "math-resta-003",
+    "skill_id": "resta",
+    "subject": "math",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "prompt": "En una estación de monitoreo ambiental, el nivel del agua en un canal era de 2,040 mm antes de la temporada seca y bajó a 1,385 mm. ¿Cuántos milímetros disminuyó el nivel del agua?",
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "745 mm"
+      },
+      {
+        "id": "opt-b",
+        "text": "665 mm"
+      },
+      {
+        "id": "opt-c",
+        "text": "655 mm"
+      },
+      {
+        "id": "opt-d",
+        "text": "1,345 mm"
+      }
+    ],
+    "answer_key": {
+      "choice_id": "opt-c"
+    },
+    "hints": [
+      "Ten cuidado al desagrupar cuando hay un cero en las centenas (2,040). Revisa cuánto queda en las decenas después de prestar a las unidades.",
+      "1,385 + 15 = 1,400. Desde 1,400 hasta 2,040 faltan 640 mm. Suma ambos tramos."
+    ],
+    "explanation": "Calculamos 2,040 − 1,385. Por complemento: de 1,385 a 1,400 faltan 15 mm; de 1,400 a 2,040 faltan 640 mm. Total: 15 + 640 = 655 mm.",
+    "source": "Equipo Axo — UniconHub Hack 2026 (contenido original en español de México; dificultad estimada por expertos)",
+    "tags": [
+      "aritmetica",
+      "ceros-intermedios",
+      "ambiente"
+    ]
+  },
+  {
+    "id": "math-comparacion-001",
+    "skill_id": "comparacion",
+    "subject": "math",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "prompt": "Cuatro equipos registraron sus puntajes en un torneo de ciencias: Equipo Norte (4,089), Equipo Sur (4,809), Equipo Este (4,098) y Equipo Oeste (3,999). ¿Qué equipo obtuvo el mayor puntaje?",
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "Equipo Norte (4,089)"
+      },
+      {
+        "id": "opt-b",
+        "text": "Equipo Sur (4,809)"
+      },
+      {
+        "id": "opt-c",
+        "text": "Equipo Este (4,098)"
+      },
+      {
+        "id": "opt-d",
+        "text": "Equipo Oeste (3,999)"
+      }
+    ],
+    "answer_key": {
+      "choice_id": "opt-b"
+    },
+    "hints": [
+      "Compara primero la cifra de los millares (primer dígito de izquierda a derecha) y descarta el menor.",
+      "Entre los números que empiezan con 4 (4,089; 4,809 y 4,098), compara la cifra de las centenas."
+    ],
+    "explanation": "4,089, 4,809 y 4,098 tienen 4 millares (mayores que 3,999). Al comparar sus centenas, 4,809 tiene 8 centenas mientras los otros tienen 0, por lo que Equipo Sur es el mayor.",
+    "source": "Equipo Axo — UniconHub Hack 2026 (contenido original en español de México; dificultad estimada por expertos)",
+    "tags": [
+      "valor-posicional",
+      "orden-numerico"
+    ]
+  },
+  {
+    "id": "math-comparacion-002",
+    "skill_id": "comparacion",
+    "subject": "math",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "prompt": "En una prueba de 100 metros planos, cuatro corredores registraron los siguientes tiempos: 13.45 s, 13.09 s, 13.5 s y 13.18 s. ¿Cuál tiempo corresponde al corredor más rápido (menor tiempo)?",
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "13.5 s"
+      },
+      {
+        "id": "opt-b",
+        "text": "13.45 s"
+      },
+      {
+        "id": "opt-c",
+        "text": "13.18 s"
+      },
+      {
+        "id": "opt-d",
+        "text": "13.09 s"
+      }
+    ],
+    "answer_key": {
+      "choice_id": "opt-d"
+    },
+    "hints": [
+      "Todos tienen 13 segundos enteros. Escribe todos los tiempos con dos cifras decimales (por ejemplo, 13.5 = 13.50) para compararlos mejor.",
+      "Compara los décimos después del punto decimal: 0.45, 0.09, 0.50 y 0.18. El más rápido es el número menor."
+    ],
+    "explanation": "Al igualar a dos cifras decimales tenemos 13.45 s, 13.09 s, 13.50 s y 13.18 s. El menor tiempo es 13.09 s (0 décimos y 9 centésimos).",
+    "source": "Equipo Axo — UniconHub Hack 2026 (contenido original en español de México; dificultad estimada por expertos)",
+    "tags": [
+      "decimales",
+      "comparacion",
+      "deportes"
+    ]
+  },
+  {
+    "id": "math-comparacion-003",
+    "skill_id": "comparacion",
+    "subject": "math",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "prompt": "Se tienen cuatro archivos digitales con los siguientes tamaños: 1,250 MB, 1.05 GB (1,050 MB), 1,520 MB y 1.2 GB (1,200 MB). Si los ordenas de menor a mayor tamaño, ¿cuál queda en segundo lugar?",
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "1.05 GB (1,050 MB)"
+      },
+      {
+        "id": "opt-b",
+        "text": "1.2 GB (1,200 MB)"
+      },
+      {
+        "id": "opt-c",
+        "text": "1,250 MB"
+      },
+      {
+        "id": "opt-d",
+        "text": "1,520 MB"
+      }
+    ],
+    "answer_key": {
+      "choice_id": "opt-b"
+    },
+    "hints": [
+      "Expresa todos los tamaños en megabytes (MB) para usar la misma unidad de comparación.",
+      "Los tamaños en MB son 1,050; 1,200; 1,250 y 1,520. Identifica el más pequeño y luego el que le sigue."
+    ],
+    "explanation": "Ordenados de menor a mayor en MB: 1,050 MB (1.05 GB) < 1,200 MB (1.2 GB) < 1,250 MB < 1,520 MB. El segundo archivo más pequeño es 1.2 GB (1,200 MB).",
+    "source": "Equipo Axo — UniconHub Hack 2026 (contenido original en español de México; dificultad estimada por expertos)",
+    "tags": [
+      "conversion-unidades",
+      "orden-numerico",
+      "tecnologia"
+    ]
+  },
+  {
+    "id": "math-multiplicacion-001",
+    "skill_id": "multiplicacion",
+    "subject": "math",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "prompt": "Un salón de cómputo tiene 7 filas con 6 computadoras cada una. ¿Cuántas computadoras hay en total en el salón?",
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "13 computadoras"
+      },
+      {
+        "id": "opt-b",
+        "text": "36 computadoras"
+      },
+      {
+        "id": "opt-c",
+        "text": "42 computadoras"
+      },
+      {
+        "id": "opt-d",
+        "text": "48 computadoras"
+      }
+    ],
+    "answer_key": {
+      "choice_id": "opt-c"
+    },
+    "hints": [
+      "Tienes 7 grupos iguales de 6 elementos. No sumes 7 + 6; multiplica 7 × 6.",
+      "Si sabes cuánto es 5 × 6 = 30, solo súmale 2 filas más de 6 (12)."
+    ],
+    "explanation": "7 filas × 6 computadoras por fila = 42 computadoras en total.",
+    "source": "Equipo Axo — UniconHub Hack 2026 (contenido original en español de México; dificultad estimada por expertos)",
+    "tags": [
+      "multiplicacion",
+      "arreglos-rectangulares"
+    ]
+  },
+  {
+    "id": "math-multiplicacion-002",
+    "skill_id": "multiplicacion",
+    "subject": "math",
+    "difficulty": "medium",
+    "type": "numeric",
+    "prompt": "Para armar paquetes de estudio, se colocan 18 hojas en cada carpeta. Si se preparan 24 carpetas iguales, ¿cuántas hojas se necesitan en total?",
+    "answer_key": {
+      "value": 432,
+      "tolerance": 0,
+      "unit": "hojas"
+    },
+    "hints": [
+      "Descompón el 24 en 20 + 4 para multiplicar más fácil: primero calcula 18 × 20 y luego 18 × 4.",
+      "18 × 20 = 360 y 18 × 4 = 72. Suma ambos productos parciales."
+    ],
+    "explanation": "Multiplicamos 18 × 24 = (18 × 20) + (18 × 4) = 360 + 72 = 432 hojas.",
+    "source": "Equipo Axo — UniconHub Hack 2026 (contenido original en español de México; dificultad estimada por expertos)",
+    "tags": [
+      "multiplicacion",
+      "productos-parciales",
+      "numerico"
+    ]
+  },
+  {
+    "id": "math-multiplicacion-003",
+    "skill_id": "multiplicacion",
+    "subject": "math",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "prompt": "Un auditorio escolar tiene 16 secciones y cada sección cuenta con 25 asientos. Si durante un evento se ocupan 14 secciones completas y 12 asientos de otra sección, ¿cuántos asientos están ocupados en total?",
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "412 asientos"
+      },
+      {
+        "id": "opt-b",
+        "text": "362 asientos"
+      },
+      {
+        "id": "opt-c",
+        "text": "350 asientos"
+      },
+      {
+        "id": "opt-d",
+        "text": "390 asientos"
+      }
+    ],
+    "answer_key": {
+      "choice_id": "opt-b"
+    },
+    "hints": [
+      "Fíjate en el dato que realmente necesitas: no se ocuparon las 16 secciones, sino 14 secciones completas más 12 asientos.",
+      "Calcula primero 14 × 25 (pista: 4 × 25 = 100, así que 12 × 25 = 300) y luego suma 12."
+    ],
+    "explanation": "Las 14 secciones completas tienen 14 × 25 = 350 asientos. Al sumar los 12 asientos adicionales: 350 + 12 = 362 asientos ocupados.",
+    "source": "Equipo Axo — UniconHub Hack 2026 (contenido original en español de México; dificultad estimada por expertos)",
+    "tags": [
+      "multiplicacion",
+      "datos-distractores"
+    ]
+  },
+  {
+    "id": "math-division-001",
+    "skill_id": "division",
+    "subject": "math",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "prompt": "Se van a repartir 54 marcadores en partes iguales entre 6 mesas de trabajo. ¿Cuántos marcadores le tocan a cada mesa?",
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "8 marcadores"
+      },
+      {
+        "id": "opt-b",
+        "text": "9 marcadores"
+      },
+      {
+        "id": "opt-c",
+        "text": "48 marcadores"
+      },
+      {
+        "id": "opt-d",
+        "text": "7 marcadores"
+      }
+    ],
+    "answer_key": {
+      "choice_id": "opt-b"
+    },
+    "hints": [
+      "Busca qué número multiplicado por 6 da exactamente 54.",
+      "6 × 8 = 48. Si agregas un grupo más de 6 a 48, llegas a 54."
+    ],
+    "explanation": "54 ÷ 6 = 9 porque 6 × 9 = 54. A cada mesa le tocan 9 marcadores.",
+    "source": "Equipo Axo — UniconHub Hack 2026 (contenido original en español de México; dificultad estimada por expertos)",
+    "tags": [
+      "division",
+      "reparto-equitativo"
+    ]
+  },
+  {
+    "id": "math-division-002",
+    "skill_id": "division",
+    "subject": "math",
+    "difficulty": "medium",
+    "type": "numeric",
+    "prompt": "Una imprenta escolar produjo 312 cuadernillos y los empacará en cajas donde caben exactamente 12 cuadernillos por caja. ¿Cuántas cajas completas se llenarán?",
+    "answer_key": {
+      "value": 26,
+      "tolerance": 0,
+      "unit": "cajas"
+    },
+    "hints": [
+      "Divide 312 ÷ 12. Puedes pensar cuántas veces cabe 12 en 300 primero.",
+      "12 × 25 = 300. Como hay 312 cuadernillos, sobran 12 cuadernillos más, que llenan 1 caja adicional."
+    ],
+    "explanation": "312 ÷ 12 = 26 cajas completas, ya que 12 × 25 = 300 y 12 × 1 = 12 (300 + 12 = 312).",
+    "source": "Equipo Axo — UniconHub Hack 2026 (contenido original en español de México; dificultad estimada por expertos)",
+    "tags": [
+      "division",
+      "agrupamiento",
+      "numerico"
+    ]
+  },
+  {
+    "id": "math-division-003",
+    "skill_id": "division",
+    "subject": "math",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "prompt": "Un grupo de 145 estudiantes irá a una visita académica en camionetas con capacidad para 18 pasajeros cada una. ¿Cuál es el número mínimo de camionetas necesarias para transportar a todos?",
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "7 camionetas"
+      },
+      {
+        "id": "opt-b",
+        "text": "8 camionetas"
+      },
+      {
+        "id": "opt-c",
+        "text": "9 camionetas"
+      },
+      {
+        "id": "opt-d",
+        "text": "10 camionetas"
+      }
+    ],
+    "answer_key": {
+      "choice_id": "opt-c"
+    },
+    "hints": [
+      "Calcula cuántos estudiantes caben en 8 camionetas: 8 × 18. Revisa si queda algún estudiante sin lugar.",
+      "8 × 18 = 144 pasajeros. Como son 145 estudiantes, queda 1 persona que también necesita transporte."
+    ],
+    "explanation": "145 ÷ 18 = 8 con residuo 1 (8 × 18 = 144). Para no dejar a 1 estudiante fuera, se requieren 9 camionetas como mínimo.",
+    "source": "Equipo Axo — UniconHub Hack 2026 (contenido original en español de México; dificultad estimada por expertos)",
+    "tags": [
+      "division",
+      "interpretacion-residuo"
+    ]
+  },
+  {
+    "id": "math-fracciones-001",
+    "skill_id": "fracciones",
+    "subject": "math",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "prompt": "Una barra energética está dividida en 8 partes iguales. Si Tomás come 3 partes por la mañana y 2 partes por la tarde, ¿qué fracción de la barra comió en total?",
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "5/16"
+      },
+      {
+        "id": "opt-b",
+        "text": "5/8"
+      },
+      {
+        "id": "opt-c",
+        "text": "3/8"
+      },
+      {
+        "id": "opt-d",
+        "text": "6/8"
+      }
+    ],
+    "answer_key": {
+      "choice_id": "opt-b"
+    },
+    "hints": [
+      "Ambas porciones son octavos de la misma barra, así que el denominador (8) no cambia al sumarlas.",
+      "Suma únicamente los numeradores (3 + 2) y mantén el 8 como denominador."
+    ],
+    "explanation": "3/8 + 2/8 = (3 + 2)/8 = 5/8 de la barra energética.",
+    "source": "Equipo Axo — UniconHub Hack 2026 (contenido original en español de México; dificultad estimada por expertos)",
+    "tags": [
+      "fracciones",
+      "mismo-denominador"
+    ]
+  },
+  {
+    "id": "math-fracciones-002",
+    "skill_id": "fracciones",
+    "subject": "math",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "prompt": "En una encuesta a 40 estudiantes sobre su medio de transporte preferido, 3/5 eligieron bicicleta. ¿Cuántos estudiantes eligieron bicicleta?",
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "8 estudiantes"
+      },
+      {
+        "id": "opt-b",
+        "text": "15 estudiantes"
+      },
+      {
+        "id": "opt-c",
+        "text": "24 estudiantes"
+      },
+      {
+        "id": "opt-d",
+        "text": "35 estudiantes"
+      }
+    ],
+    "answer_key": {
+      "choice_id": "opt-c"
+    },
+    "hints": [
+      "Divide primero el total de 40 estudiantes en 5 grupos iguales para saber cuánto vale 1/5.",
+      "1/5 de 40 es 40 ÷ 5 = 8. Como buscas 3/5, multiplica ese resultado por 3."
+    ],
+    "explanation": "1/5 de 40 = 8 estudiantes. Por lo tanto, 3/5 de 40 = 3 × 8 = 24 estudiantes.",
+    "source": "Equipo Axo — UniconHub Hack 2026 (contenido original en español de México; dificultad estimada por expertos)",
+    "tags": [
+      "fracciones",
+      "fraccion-de-cantidad"
+    ]
+  },
+  {
+    "id": "math-fracciones-003",
+    "skill_id": "fracciones",
+    "subject": "math",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "prompt": "Para preparar pintura verde, Sofía mezcló 2/3 de litro de pintura azul con 1/6 de litro de pintura amarilla. ¿Cuántos litros de mezcla obtuvo en total?",
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "3/9 de litro"
+      },
+      {
+        "id": "opt-b",
+        "text": "3/6 de litro"
+      },
+      {
+        "id": "opt-c",
+        "text": "5/6 de litro"
+      },
+      {
+        "id": "opt-d",
+        "text": "1/2 litro"
+      }
+    ],
+    "answer_key": {
+      "choice_id": "opt-c"
+    },
+    "hints": [
+      "Convierte 2/3 a sextos multiplicando numerador y denominador por 2 para que ambas fracciones tengan el mismo denominador.",
+      "2/3 equivale a 4/6. Ahora suma 4/6 + 1/6."
+    ],
+    "explanation": "Convertimos 2/3 = 4/6. Luego sumamos 4/6 + 1/6 = 5/6 de litro de pintura verde.",
+    "source": "Equipo Axo — UniconHub Hack 2026 (contenido original en español de México; dificultad estimada por expertos)",
+    "tags": [
+      "fracciones",
+      "denominadores-distintos"
+    ]
+  },
+  {
+    "id": "math-fracciones-004",
+    "skill_id": "fracciones",
+    "subject": "math",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "prompt": "Un tinaco de 120 litros estaba lleno hasta 3/4 de su capacidad. Si se utilizaron 2/5 del agua que había en el tinaco para regar un huerto escolar, ¿cuántos litros se utilizaron?",
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "90 litros"
+      },
+      {
+        "id": "opt-b",
+        "text": "48 litros"
+      },
+      {
+        "id": "opt-c",
+        "text": "36 litros"
+      },
+      {
+        "id": "opt-d",
+        "text": "30 litros"
+      }
+    ],
+    "answer_key": {
+      "choice_id": "opt-c"
+    },
+    "hints": [
+      "Calcula primero cuántos litros había en el tinaco: 3/4 de 120 litros.",
+      "3/4 de 120 son 90 litros. Ahora calcula 2/5 de esos 90 litros (divide 90 entre 5 y multiplica por 2)."
+    ],
+    "explanation": "Agua inicial: (3/4) × 120 = 90 litros. Agua usada: (2/5) × 90 = 18 × 2 = 36 litros.",
+    "source": "Equipo Axo — UniconHub Hack 2026 (contenido original en español de México; dificultad estimada por expertos)",
+    "tags": [
+      "fracciones",
+      "dos-pasos",
+      "razonamiento-proporcional"
+    ]
+  },
+  {
+    "id": "math-decimales-001",
+    "skill_id": "decimales",
+    "subject": "math",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "prompt": "En una práctica de laboratorio, cuatro muestras pesaron 0.45 g, 0.5 g, 0.09 g y 0.48 g. ¿Cuál es la muestra más pesada?",
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "0.48 g"
+      },
+      {
+        "id": "opt-b",
+        "text": "0.5 g"
+      },
+      {
+        "id": "opt-c",
+        "text": "0.45 g"
+      },
+      {
+        "id": "opt-d",
+        "text": "0.09 g"
+      }
+    ],
+    "answer_key": {
+      "choice_id": "opt-b"
+    },
+    "hints": [
+      "Agrega un cero a la derecha de 0.5 para verlo en centésimos (0.50 g) y compáralo con 0.48 g.",
+      "Compara la primera cifra después del punto decimal (los décimos): 5 décimos es mayor que 4 décimos."
+    ],
+    "explanation": "0.5 g = 0.50 g, que tiene 5 décimos, mientras que 0.48 g y 0.45 g tienen 4 décimos y 0.09 g tiene 0 décimos. La muestra más pesada es 0.5 g.",
+    "source": "Equipo Axo — UniconHub Hack 2026 (contenido original en español de México; dificultad estimada por expertos)",
+    "tags": [
+      "decimales",
+      "centesimos",
+      "laboratorio"
+    ]
+  },
+  {
+    "id": "math-decimales-002",
+    "skill_id": "decimales",
+    "subject": "math",
+    "difficulty": "medium",
+    "type": "numeric",
+    "prompt": "Un cable de red mide 4.75 metros y se une con otro cable de 2.8 metros. ¿Cuál es la longitud total en metros de los dos cables unidos?",
+    "answer_key": {
+      "value": 7.55,
+      "tolerance": 0.001,
+      "unit": "metros"
+    },
+    "hints": [
+      "Alinea los puntos decimales antes de sumar; escribe 2.8 como 2.80 para no confundir décimos con centésimos.",
+      "Suma los centésimos (0.75 + 0.80 = 1.55) y agrégalos a la suma de los enteros (4 + 2 = 6)."
+    ],
+    "explanation": "Alineando el punto decimal: 4.75 + 2.80 = 7.55 metros.",
+    "source": "Equipo Axo — UniconHub Hack 2026 (contenido original en español de México; dificultad estimada por expertos)",
+    "tags": [
+      "decimales",
+      "suma-decimal",
+      "numerico"
+    ]
+  },
+  {
+    "id": "math-decimales-003",
+    "skill_id": "decimales",
+    "subject": "math",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "prompt": "Un rollo de filamento para impresora 3D contiene 15.4 metros. Si cada pieza impresa consume 2.2 metros, ¿cuántas piezas completas se pueden imprimir con ese rollo?",
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "6 piezas"
+      },
+      {
+        "id": "opt-b",
+        "text": "7 piezas"
+      },
+      {
+        "id": "opt-c",
+        "text": "8 piezas"
+      },
+      {
+        "id": "opt-d",
+        "text": "13 piezas"
+      }
+    ],
+    "answer_key": {
+      "choice_id": "opt-b"
+    },
+    "hints": [
+      "Multiplica ambos números por 10 para convertir 15.4 ÷ 2.2 en una división exacta de enteros: 154 ÷ 22.",
+      "Prueba multiplicando 22 × 7 para comprobar si alcanza exactamente 154."
+    ],
+    "explanation": "15.4 ÷ 2.2 = 154 ÷ 22 = 7, porque 2.2 × 7 = 15.4 metros. Se pueden imprimir 7 piezas completas.",
+    "source": "Equipo Axo — UniconHub Hack 2026 (contenido original en español de México; dificultad estimada por expertos)",
+    "tags": [
+      "decimales",
+      "division-decimal",
+      "impresion-3d"
+    ]
+  },
+  {
+    "id": "math-cambio-001",
+    "skill_id": "cambio",
+    "subject": "math",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "prompt": "Diego recargó $35 en su tarjeta de transporte público y pagó con un billete de $100. ¿Cuánto cambio debe recibir?",
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "$75"
+      },
+      {
+        "id": "opt-b",
+        "text": "$65"
+      },
+      {
+        "id": "opt-c",
+        "text": "$55"
+      },
+      {
+        "id": "opt-d",
+        "text": "$135"
+      }
+    ],
+    "answer_key": {
+      "choice_id": "opt-b"
+    },
+    "hints": [
+      "Cuenta cuánto le falta a $35 para llegar a $40, y luego cuánto falta de $40 para llegar a $100.",
+      "De 35 a 40 faltan $5, y de 40 a 100 faltan $60. Suma ambas cantidades."
+    ],
+    "explanation": "$100 − $35 = $65. Puedes comprobarlo sumando $65 + $35 = $100.",
+    "source": "Equipo Axo — UniconHub Hack 2026 (contenido original en español de México; dificultad estimada por expertos)",
+    "tags": [
+      "dinero",
+      "cambio",
+      "vida-cotidiana"
+    ]
+  },
+  {
+    "id": "math-cambio-002",
+    "skill_id": "cambio",
+    "subject": "math",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "prompt": "Renata tiene $120 ahorrados y quiere comprar unos audífonos de $185. ¿Cuánto dinero le falta para completar la compra?",
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "$55"
+      },
+      {
+        "id": "opt-b",
+        "text": "$65"
+      },
+      {
+        "id": "opt-c",
+        "text": "$75"
+      },
+      {
+        "id": "opt-d",
+        "text": "$305"
+      }
+    ],
+    "answer_key": {
+      "choice_id": "opt-b"
+    },
+    "hints": [
+      "Resta lo que ya tiene ahorrado ($120) del precio total de los audífonos ($185).",
+      "De 120 a 180 hay $60, más $5 adicionales para llegar a 185."
+    ],
+    "explanation": "$185 − $120 = $65. A Renata le faltan $65 para comprar los audífonos.",
+    "source": "Equipo Axo — UniconHub Hack 2026 (contenido original en español de México; dificultad estimada por expertos)",
+    "tags": [
+      "dinero",
+      "diferencia",
+      "ahorro"
+    ]
+  },
+  {
+    "id": "math-cambio-003",
+    "skill_id": "cambio",
+    "subject": "math",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "prompt": "En la papelería, Carlos compró un juego de geometría de $48.50 y una libreta de $36.50. Si pagó con un billete de $200, ¿cuánto cambio recibió?",
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "$85"
+      },
+      {
+        "id": "opt-b",
+        "text": "$125"
+      },
+      {
+        "id": "opt-c",
+        "text": "$115"
+      },
+      {
+        "id": "opt-d",
+        "text": "$116"
+      }
+    ],
+    "answer_key": {
+      "choice_id": "opt-c"
+    },
+    "hints": [
+      "Primero suma el precio de los dos artículos ($48.50 + $36.50). Observa que los centavos suman $1.00.",
+      "El gasto total es $85.00. Ahora resta $200 − $85."
+    ],
+    "explanation": "Total de la compra: $48.50 + $36.50 = $85.00. Cambio: $200 − $85 = $115.",
+    "source": "Equipo Axo — UniconHub Hack 2026 (contenido original en español de México; dificultad estimada por expertos)",
+    "tags": [
+      "dinero",
+      "decimales",
+      "dos-pasos"
+    ]
+  },
+  {
+    "id": "math-cambio-004",
+    "skill_id": "cambio",
+    "subject": "math",
+    "difficulty": "hard",
+    "type": "numeric",
+    "prompt": "Una mochila cuesta $450, pero tiene un descuento del 20%. Si pagas la mochila con descuento usando un billete de $500, ¿cuántos pesos te devuelven de cambio?",
+    "answer_key": {
+      "value": 140,
+      "tolerance": 0,
+      "unit": "pesos"
+    },
+    "hints": [
+      "Calcula primero cuánto es el 20% de $450 (pista: el 10% de 450 es 45, así que el 20% es el doble).",
+      "El descuento es de $90, por lo que la mochila cuesta $360. Resta $360 a los $500 con los que pagaste."
+    ],
+    "explanation": "20% de $450 = $90 de descuento. Precio con descuento: $450 − $90 = $360. Cambio al pagar con $500: $500 − $360 = $140.",
+    "source": "Equipo Axo — UniconHub Hack 2026 (contenido original en español de México; dificultad estimada por expertos)",
+    "tags": [
+      "porcentajes",
+      "descuentos",
+      "cambio",
+      "numerico"
+    ]
+  },
+  {
+    "id": "math-varios-pasos-001",
+    "skill_id": "varios-pasos",
+    "subject": "math",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "prompt": "En una cafetería escolar, un sándwich cuesta $24 y un agua de fruta cuesta $12. Si Luis compra 2 sándwiches y 1 agua, ¿cuánto paga en total?",
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "$36"
+      },
+      {
+        "id": "opt-b",
+        "text": "$48"
+      },
+      {
+        "id": "opt-c",
+        "text": "$60"
+      },
+      {
+        "id": "opt-d",
+        "text": "$72"
+      }
+    ],
+    "answer_key": {
+      "choice_id": "opt-c"
+    },
+    "hints": [
+      "Calcula primero el costo de los 2 sándwiches multiplicando $24 × 2.",
+      "Los 2 sándwiches cuestan $48. Ahora súmale los $12 del agua de fruta."
+    ],
+    "explanation": "2 sándwiches × $24 = $48. Al sumar $12 del agua de fruta: $48 + $12 = $60 en total.",
+    "source": "Equipo Axo — UniconHub Hack 2026 (contenido original en español de México; dificultad estimada por expertos)",
+    "tags": [
+      "problemas-varios-pasos",
+      "operaciones-combinadas"
+    ]
+  },
+  {
+    "id": "math-varios-pasos-002",
+    "skill_id": "varios-pasos",
+    "subject": "math",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "prompt": "Un equipo de 4 amigos ganó $620 en un concurso de reciclaje. Primero gastaron $140 en comprar herramientas para su proyecto y luego repartieron el dinero restante en partes iguales. ¿Cuánto dinero recibió cada amigo?",
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "$155"
+      },
+      {
+        "id": "opt-b",
+        "text": "$120"
+      },
+      {
+        "id": "opt-c",
+        "text": "$480"
+      },
+      {
+        "id": "opt-d",
+        "text": "$115"
+      }
+    ],
+    "answer_key": {
+      "choice_id": "opt-b"
+    },
+    "hints": [
+      "Antes de dividir entre los 4 amigos, resta el gasto de $140 al premio de $620.",
+      "Quedan $480 para repartir. Ahora divide $480 ÷ 4."
+    ],
+    "explanation": "Dinero restante tras comprar herramientas: $620 − $140 = $480. Repartido entre 4 amigos: $480 ÷ 4 = $120 cada uno.",
+    "source": "Equipo Axo — UniconHub Hack 2026 (contenido original en español de México; dificultad estimada por expertos)",
+    "tags": [
+      "problemas-varios-pasos",
+      "resta-y-division"
+    ]
+  },
+  {
+    "id": "math-varios-pasos-003",
+    "skill_id": "varios-pasos",
+    "subject": "math",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "prompt": "Una bicicleta cuesta $3,200. Si pagas 25% de enganche al momento de apartarla y el resto lo cubres en 6 mensualidades iguales sin intereses, ¿de cuánto es cada mensualidad?",
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "$800"
+      },
+      {
+        "id": "opt-b",
+        "text": "$533"
+      },
+      {
+        "id": "opt-c",
+        "text": "$400"
+      },
+      {
+        "id": "opt-d",
+        "text": "$450"
+      }
+    ],
+    "answer_key": {
+      "choice_id": "opt-c"
+    },
+    "hints": [
+      "Recuerda que 25% equivale a la cuarta parte (1/4). Calcula cuánto es 1/4 de $3,200 y réstalo del precio total.",
+      "El enganche es $800, así que quedan $2,400 por pagar. Divide $2,400 entre las 6 mensualidades."
+    ],
+    "explanation": "Enganche (25% de $3,200) = $800. Saldo restante: $3,200 − $800 = $2,400. Cada mensualidad: $2,400 ÷ 6 = $400.",
+    "source": "Equipo Axo — UniconHub Hack 2026 (contenido original en español de México; dificultad estimada por expertos)",
+    "tags": [
+      "problemas-varios-pasos",
+      "porcentajes",
+      "finanzas-basicas"
+    ]
+  },
+  {
+    "id": "math-varios-pasos-004",
+    "skill_id": "varios-pasos",
+    "subject": "math",
+    "difficulty": "hard",
+    "type": "numeric",
+    "prompt": "En una tienda de electrónica, 3 memorias USB idénticas cuestan $435 en total. ¿Cuánto costarán 5 de esas mismas memorias USB?",
+    "answer_key": {
+      "value": 725,
+      "tolerance": 0,
+      "unit": "pesos"
+    },
+    "hints": [
+      "Calcula primero el precio de una sola memoria USB dividiendo $435 ÷ 3.",
+      "Cada memoria cuesta $145. Multiplica $145 × 5 para hallar el costo total."
+    ],
+    "explanation": "Valor unitario: $435 ÷ 3 = $145 por memoria. Para 5 memorias: $145 × 5 = $725.",
+    "source": "Equipo Axo — UniconHub Hack 2026 (contenido original en español de México; dificultad estimada por expertos)",
+    "tags": [
+      "proporcionalidad",
+      "valor-unitario",
+      "numerico"
+    ]
+  },
+  {
+    "id": "read-datos-001",
+    "skill_id": "datos",
+    "subject": "reading",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "passage": {
+      "passage_id": "bioacustica-xochimilco",
+      "title": "Sensores bajo el agua en Xochimilco",
+      "paragraphs": [
+        {
+          "id": "p1",
+          "text": "Para estudiar la salud de los canales de Xochimilco sin perturbar a los ajolotes, un grupo de jóvenes biólogos instaló micrófonos subacuáticos llamados hidrófonos. A diferencia de las redes de captura, estos dispositivos graban el sonido del entorno durante las veinticuatro horas del día."
+        },
+        {
+          "id": "p2",
+          "text": "Al analizar las grabaciones de tres meses, el equipo notó un patrón claro: los canales conectados directamente con zonas turísticas registraban un ruido constante de motores entre las diez de la mañana y las seis de la tarde. En cambio, las apantles —canales más estrechos rodeados de chinampas activas— mantenían niveles bajos de ruido y mayor diversidad de cantos de ranas e insectos acuáticos."
+        },
+        {
+          "id": "p3",
+          "text": "La investigadora principal señaló que el monitoreo acústico es una herramienta valiosa para detectar cambios rápidos en el ecosistema. Sin embargo, advirtió que grabar sonidos no sustituye las mediciones químicas de oxígeno y temperatura del agua, sino que las complementa."
+        },
+        {
+          "id": "p4",
+          "text": "Con estos resultados, la cooperativa local propuso reducir la velocidad de las embarcaciones con motor cerca de las zonas de refugio y colocar barreras vegetales para amortiguar las ondas sonoras."
+        }
+      ]
+    },
+    "evidence_paragraphs": [
+      "p1"
+    ],
+    "prompt": "Según el texto, ¿qué ventaja tienen los hidrófonos frente a las redes de captura?",
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "Miden automáticamente la temperatura y el oxígeno del agua."
+      },
+      {
+        "id": "opt-b",
+        "text": "Graban el sonido del entorno todo el día sin perturbar a los ajolotes."
+      },
+      {
+        "id": "opt-c",
+        "text": "Reducen la velocidad de las embarcaciones con motor."
+      },
+      {
+        "id": "opt-d",
+        "text": "Eliminan el ruido de las zonas turísticas."
+      }
+    ],
+    "answer_key": {
+      "choice_id": "opt-b"
+    },
+    "hints": [
+      "Revisa el primer párrafo, donde se presenta el instrumento utilizado por los biólogos.",
+      "Fíjate en la comparación directa: «A diferencia de las redes de captura, estos dispositivos...»."
+    ],
+    "explanation": "El párrafo p1 señala explícitamente que los hidrófonos graban el sonido del entorno las veinticuatro horas sin perturbar a los ajolotes.",
+    "source": "Equipo Axo — UniconHub Hack 2026 (contenido original en español de México; dificultad estimada por expertos)",
+    "tags": [
+      "lectura-literal",
+      "ciencia",
+      "xochimilco"
+    ]
+  },
+  {
+    "id": "read-vocab-001",
+    "skill_id": "vocab",
+    "subject": "reading",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "passage": {
+      "passage_id": "bioacustica-xochimilco",
+      "title": "Sensores bajo el agua en Xochimilco",
+      "paragraphs": [
+        {
+          "id": "p1",
+          "text": "Para estudiar la salud de los canales de Xochimilco sin perturbar a los ajolotes, un grupo de jóvenes biólogos instaló micrófonos subacuáticos llamados hidrófonos. A diferencia de las redes de captura, estos dispositivos graban el sonido del entorno durante las veinticuatro horas del día."
+        },
+        {
+          "id": "p2",
+          "text": "Al analizar las grabaciones de tres meses, el equipo notó un patrón claro: los canales conectados directamente con zonas turísticas registraban un ruido constante de motores entre las diez de la mañana y las seis de la tarde. En cambio, las apantles —canales más estrechos rodeados de chinampas activas— mantenían niveles bajos de ruido y mayor diversidad de cantos de ranas e insectos acuáticos."
+        },
+        {
+          "id": "p3",
+          "text": "La investigadora principal señaló que el monitoreo acústico es una herramienta valiosa para detectar cambios rápidos en el ecosistema. Sin embargo, advirtió que grabar sonidos no sustituye las mediciones químicas de oxígeno y temperatura del agua, sino que las complementa."
+        },
+        {
+          "id": "p4",
+          "text": "Con estos resultados, la cooperativa local propuso reducir la velocidad de las embarcaciones con motor cerca de las zonas de refugio y colocar barreras vegetales para amortiguar las ondas sonoras."
+        }
+      ]
+    },
+    "evidence_paragraphs": [
+      "p2"
+    ],
+    "prompt": "De acuerdo con el segundo párrafo, ¿qué son las «apantles»?",
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "Micrófonos subacuáticos usados para grabar ranas."
+      },
+      {
+        "id": "opt-b",
+        "text": "Canales más estrechos rodeados de chinampas activas."
+      },
+      {
+        "id": "opt-c",
+        "text": "Embarcaciones turísticas que circulan por la tarde."
+      },
+      {
+        "id": "opt-d",
+        "text": "Barreras vegetales para detener el agua."
+      }
+    ],
+    "answer_key": {
+      "choice_id": "opt-b"
+    },
+    "hints": [
+      "Lee la segunda oración del párrafo p2; el propio texto define la palabra entre guiones.",
+      "Observa la frase «las apantles —canales más estrechos rodeados de chinampas activas—»."
+    ],
+    "explanation": "El texto define directamente entre guiones en el párrafo p2 que las apantles son canales más estrechos rodeados de chinampas activas.",
+    "source": "Equipo Axo — UniconHub Hack 2026 (contenido original en español de México; dificultad estimada por expertos)",
+    "tags": [
+      "vocabulario-contextual",
+      "definicion-en-texto"
+    ]
+  },
+  {
+    "id": "read-inferencia-001",
+    "skill_id": "inferencia",
+    "subject": "reading",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "passage": {
+      "passage_id": "bioacustica-xochimilco",
+      "title": "Sensores bajo el agua en Xochimilco",
+      "paragraphs": [
+        {
+          "id": "p1",
+          "text": "Para estudiar la salud de los canales de Xochimilco sin perturbar a los ajolotes, un grupo de jóvenes biólogos instaló micrófonos subacuáticos llamados hidrófonos. A diferencia de las redes de captura, estos dispositivos graban el sonido del entorno durante las veinticuatro horas del día."
+        },
+        {
+          "id": "p2",
+          "text": "Al analizar las grabaciones de tres meses, el equipo notó un patrón claro: los canales conectados directamente con zonas turísticas registraban un ruido constante de motores entre las diez de la mañana y las seis de la tarde. En cambio, las apantles —canales más estrechos rodeados de chinampas activas— mantenían niveles bajos de ruido y mayor diversidad de cantos de ranas e insectos acuáticos."
+        },
+        {
+          "id": "p3",
+          "text": "La investigadora principal señaló que el monitoreo acústico es una herramienta valiosa para detectar cambios rápidos en el ecosistema. Sin embargo, advirtió que grabar sonidos no sustituye las mediciones químicas de oxígeno y temperatura del agua, sino que las complementa."
+        },
+        {
+          "id": "p4",
+          "text": "Con estos resultados, la cooperativa local propuso reducir la velocidad de las embarcaciones con motor cerca de las zonas de refugio y colocar barreras vegetales para amortiguar las ondas sonoras."
+        }
+      ]
+    },
+    "evidence_paragraphs": [
+      "p2",
+      "p4"
+    ],
+    "prompt": "¿Qué se puede concluir al relacionar los hallazgos del párrafo 2 con las medidas propuestas en el párrafo 4?",
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "Que el ruido excesivo de motores afecta la actividad acústica de la fauna local."
+      },
+      {
+        "id": "opt-b",
+        "text": "Que las ranas e insectos solo cantan durante la madrugada."
+      },
+      {
+        "id": "opt-c",
+        "text": "Que las chinampas activas producen más ruido que las zonas turísticas."
+      },
+      {
+        "id": "opt-d",
+        "text": "Que las barreras vegetales reemplazan por completo a los hidrófonos."
+      }
+    ],
+    "answer_key": {
+      "choice_id": "opt-a"
+    },
+    "hints": [
+      "Compara lo que ocurre donde hay ruido de motores con lo que ocurre en las apantles silenciosas (p2), y luego mira qué buscan proteger en p4.",
+      "Si en las zonas con menos ruido hay mayor diversidad de cantos y por ello se busca amortiguar las ondas sonoras en refugios, ¿qué efecto tiene el ruido de motores?"
+    ],
+    "explanation": "Al contrastar el ruido constante de motores con la mayor diversidad de cantos en zonas silenciosas (p2) y la decisión de amortiguar el sonido cerca de los refugios (p4), se infiere que el ruido de motores perjudica a la fauna.",
+    "source": "Equipo Axo — UniconHub Hack 2026 (contenido original en español de México; dificultad estimada por expertos)",
+    "tags": [
+      "inferencia",
+      "causa-efecto"
+    ]
+  },
+  {
+    "id": "read-idea-001",
+    "skill_id": "idea",
+    "subject": "reading",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "passage": {
+      "passage_id": "bioacustica-xochimilco",
+      "title": "Sensores bajo el agua en Xochimilco",
+      "paragraphs": [
+        {
+          "id": "p1",
+          "text": "Para estudiar la salud de los canales de Xochimilco sin perturbar a los ajolotes, un grupo de jóvenes biólogos instaló micrófonos subacuáticos llamados hidrófonos. A diferencia de las redes de captura, estos dispositivos graban el sonido del entorno durante las veinticuatro horas del día."
+        },
+        {
+          "id": "p2",
+          "text": "Al analizar las grabaciones de tres meses, el equipo notó un patrón claro: los canales conectados directamente con zonas turísticas registraban un ruido constante de motores entre las diez de la mañana y las seis de la tarde. En cambio, las apantles —canales más estrechos rodeados de chinampas activas— mantenían niveles bajos de ruido y mayor diversidad de cantos de ranas e insectos acuáticos."
+        },
+        {
+          "id": "p3",
+          "text": "La investigadora principal señaló que el monitoreo acústico es una herramienta valiosa para detectar cambios rápidos en el ecosistema. Sin embargo, advirtió que grabar sonidos no sustituye las mediciones químicas de oxígeno y temperatura del agua, sino que las complementa."
+        },
+        {
+          "id": "p4",
+          "text": "Con estos resultados, la cooperativa local propuso reducir la velocidad de las embarcaciones con motor cerca de las zonas de refugio y colocar barreras vegetales para amortiguar las ondas sonoras."
+        }
+      ]
+    },
+    "evidence_paragraphs": [
+      "p1",
+      "p3",
+      "p4"
+    ],
+    "prompt": "¿Cuál enunciado expresa mejor la idea principal del texto?",
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "Los motores de las embarcaciones funcionan entre las diez de la mañana y las seis de la tarde."
+      },
+      {
+        "id": "opt-b",
+        "text": "El monitoreo acústico en Xochimilco aporta datos clave sobre el ecosistema y orienta acciones de conservación."
+      },
+      {
+        "id": "opt-c",
+        "text": "Los hidrófonos son más baratos que las mediciones químicas de temperatura."
+      },
+      {
+        "id": "opt-d",
+        "text": "Las redes de captura deben prohibirse en todas las chinampas."
+      }
+    ],
+    "answer_key": {
+      "choice_id": "opt-b"
+    },
+    "hints": [
+      "Busca la opción que abarque todo el texto (el método de grabación, los hallazgos y las acciones comunitarias), no solo un detalle aislado.",
+      "Descarta las opciones que mencionan solo un horario o afirmaciones que el texto nunca hace (como el costo de los equipos)."
+    ],
+    "explanation": "La opción B integra el uso de hidrófonos (p1), el diagnóstico del ecosistema (p2-p3) y las medidas tomadas por la cooperativa (p4).",
+    "source": "Equipo Axo — UniconHub Hack 2026 (contenido original en español de México; dificultad estimada por expertos)",
+    "tags": [
+      "idea-principal",
+      "sintesis"
+    ]
+  },
+  {
+    "id": "read-secuencia-001",
+    "skill_id": "secuencia",
+    "subject": "reading",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "passage": {
+      "passage_id": "microrred-solar",
+      "title": "Electricidad compartida en la sierra",
+      "paragraphs": [
+        {
+          "id": "p1",
+          "text": "En una comunidad de la Sierra Norte de Oaxaca, los cortes de luz tras las tormentas de verano dejaban sin refrigeración a la clínica local y sin internet a la telesecundaria. Para resolverlo, los habitantes instalaron una microrred solar comunitaria."
+        },
+        {
+          "id": "p2",
+          "text": "El sistema funciona en tres etapas: primero, veinticuatro paneles fotovoltaicos captan la radiación solar durante el día; segundo, un banco de baterías de litio almacena el excedente de energía; y tercero, un controlador inteligente distribuye la electricidad priorizando la clínica y la escuela cuando cae la red principal."
+        },
+        {
+          "id": "p3",
+          "text": "Durante los primeros seis meses de operación, la microrred evitó cuatro interrupciones críticas en la conservación de vacunas. Algunos vecinos opinan que este modelo es la solución definitiva para todas las regiones rurales del país, aunque los ingenieros recuerdan que requiere mantenimiento técnico constante y capacitación local."
+        },
+        {
+          "id": "p4",
+          "text": "Por ello, diez estudiantes de bachillerato de la comunidad se capacitaron para revisar el voltaje de las baterías y limpiar los paneles cada quincena."
+        }
+      ]
+    },
+    "evidence_paragraphs": [
+      "p2"
+    ],
+    "prompt": "Según el párrafo 2, ¿qué ocurre inmediatamente después de que los paneles fotovoltaicos captan la radiación solar?",
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "Un controlador distribuye electricidad a la clínica y la escuela."
+      },
+      {
+        "id": "opt-b",
+        "text": "Los estudiantes limpian los paneles y revisan el voltaje."
+      },
+      {
+        "id": "opt-c",
+        "text": "Un banco de baterías de litio almacena el excedente de energía."
+      },
+      {
+        "id": "opt-d",
+        "text": "Se desconecta la red principal durante las tormentas."
+      }
+    ],
+    "answer_key": {
+      "choice_id": "opt-c"
+    },
+    "hints": [
+      "Ubica los marcadores de orden («primero», «segundo», «tercero») en el párrafo p2.",
+      "Revisa cuál es el paso señalado como «segundo» en el funcionamiento del sistema."
+    ],
+    "explanation": "En el párrafo p2 se indica explícitamente: primero captan la radiación, segundo un banco de baterías almacena el excedente y tercero el controlador distribuye la energía.",
+    "source": "Equipo Axo — UniconHub Hack 2026 (contenido original en español de México; dificultad estimada por expertos)",
+    "tags": [
+      "secuencia",
+      "procesos-tecnicos"
+    ]
+  },
+  {
+    "id": "read-opinion-001",
+    "skill_id": "opinion",
+    "subject": "reading",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "passage": {
+      "passage_id": "microrred-solar",
+      "title": "Electricidad compartida en la sierra",
+      "paragraphs": [
+        {
+          "id": "p1",
+          "text": "En una comunidad de la Sierra Norte de Oaxaca, los cortes de luz tras las tormentas de verano dejaban sin refrigeración a la clínica local y sin internet a la telesecundaria. Para resolverlo, los habitantes instalaron una microrred solar comunitaria."
+        },
+        {
+          "id": "p2",
+          "text": "El sistema funciona en tres etapas: primero, veinticuatro paneles fotovoltaicos captan la radiación solar durante el día; segundo, un banco de baterías de litio almacena el excedente de energía; y tercero, un controlador inteligente distribuye la electricidad priorizando la clínica y la escuela cuando cae la red principal."
+        },
+        {
+          "id": "p3",
+          "text": "Durante los primeros seis meses de operación, la microrred evitó cuatro interrupciones críticas en la conservación de vacunas. Algunos vecinos opinan que este modelo es la solución definitiva para todas las regiones rurales del país, aunque los ingenieros recuerdan que requiere mantenimiento técnico constante y capacitación local."
+        },
+        {
+          "id": "p4",
+          "text": "Por ello, diez estudiantes de bachillerato de la comunidad se capacitaron para revisar el voltaje de las baterías y limpiar los paneles cada quincena."
+        }
+      ]
+    },
+    "evidence_paragraphs": [
+      "p3"
+    ],
+    "prompt": "¿Cuál de las siguientes afirmaciones del texto expresa una opinión y no un hecho comprobable?",
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "La microrred evitó cuatro interrupciones críticas en la conservación de vacunas."
+      },
+      {
+        "id": "opt-b",
+        "text": "Este modelo es la solución definitiva para todas las regiones rurales del país."
+      },
+      {
+        "id": "opt-c",
+        "text": "Diez estudiantes de bachillerato se capacitaron para revisar el voltaje."
+      },
+      {
+        "id": "opt-d",
+        "text": "El sistema cuenta con veinticuatro paneles fotovoltaicos."
+      }
+    ],
+    "answer_key": {
+      "choice_id": "opt-b"
+    },
+    "hints": [
+      "Distingue entre datos medibles en la comunidad y valoraciones generales sobre el futuro de todo el país.",
+      "Fíjate en la frase del párrafo p3 introducida por «Algunos vecinos opinan que...»."
+    ],
+    "explanation": "Afirmar que es «la solución definitiva para todas las regiones rurales» es una valoración general atribuida a algunos vecinos (p3), no un dato verificado.",
+    "source": "Equipo Axo — UniconHub Hack 2026 (contenido original en español de México; dificultad estimada por expertos)",
+    "tags": [
+      "hecho-vs-opinion",
+      "lectura-critica"
+    ]
+  },
+  {
+    "id": "read-inferencia-002",
+    "skill_id": "inferencia",
+    "subject": "reading",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "passage": {
+      "passage_id": "microrred-solar",
+      "title": "Electricidad compartida en la sierra",
+      "paragraphs": [
+        {
+          "id": "p1",
+          "text": "En una comunidad de la Sierra Norte de Oaxaca, los cortes de luz tras las tormentas de verano dejaban sin refrigeración a la clínica local y sin internet a la telesecundaria. Para resolverlo, los habitantes instalaron una microrred solar comunitaria."
+        },
+        {
+          "id": "p2",
+          "text": "El sistema funciona en tres etapas: primero, veinticuatro paneles fotovoltaicos captan la radiación solar durante el día; segundo, un banco de baterías de litio almacena el excedente de energía; y tercero, un controlador inteligente distribuye la electricidad priorizando la clínica y la escuela cuando cae la red principal."
+        },
+        {
+          "id": "p3",
+          "text": "Durante los primeros seis meses de operación, la microrred evitó cuatro interrupciones críticas en la conservación de vacunas. Algunos vecinos opinan que este modelo es la solución definitiva para todas las regiones rurales del país, aunque los ingenieros recuerdan que requiere mantenimiento técnico constante y capacitación local."
+        },
+        {
+          "id": "p4",
+          "text": "Por ello, diez estudiantes de bachillerato de la comunidad se capacitaron para revisar el voltaje de las baterías y limpiar los paneles cada quincena."
+        }
+      ]
+    },
+    "evidence_paragraphs": [
+      "p3",
+      "p4"
+    ],
+    "prompt": "¿Por qué se capacitó a diez estudiantes de bachillerato de la propia comunidad?",
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "Porque la telesecundaria necesitaba reemplazar sus clases de ciencias."
+      },
+      {
+        "id": "opt-b",
+        "text": "Para asegurar la sostenibilidad técnica del sistema sin depender siempre de personal externo."
+      },
+      {
+        "id": "opt-c",
+        "text": "Porque las baterías de litio solo funcionan de noche."
+      },
+      {
+        "id": "opt-d",
+        "text": "Para fabricar paneles solares nuevos cada quincena."
+      }
+    ],
+    "answer_key": {
+      "choice_id": "opt-b"
+    },
+    "hints": [
+      "Conecta el final del párrafo p3 («requiere mantenimiento técnico constante y capacitación local») con el conector «Por ello» al inicio de p4.",
+      "Piensa qué pasaría si el sistema necesitara mantenimiento constante pero nadie en la comunidad supiera revisarlo."
+    ],
+    "explanation": "Los ingenieros señalaron que la microrred requiere mantenimiento constante y capacitación local (p3); por ello se formó a estudiantes de la comunidad (p4) para mantenerla operando.",
+    "source": "Equipo Axo — UniconHub Hack 2026 (contenido original en español de México; dificultad estimada por expertos)",
+    "tags": [
+      "inferencia",
+      "energia-renovable"
+    ]
+  },
+  {
+    "id": "read-datos-002",
+    "skill_id": "datos",
+    "subject": "reading",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "passage": {
+      "passage_id": "microrred-solar",
+      "title": "Electricidad compartida en la sierra",
+      "paragraphs": [
+        {
+          "id": "p1",
+          "text": "En una comunidad de la Sierra Norte de Oaxaca, los cortes de luz tras las tormentas de verano dejaban sin refrigeración a la clínica local y sin internet a la telesecundaria. Para resolverlo, los habitantes instalaron una microrred solar comunitaria."
+        },
+        {
+          "id": "p2",
+          "text": "El sistema funciona en tres etapas: primero, veinticuatro paneles fotovoltaicos captan la radiación solar durante el día; segundo, un banco de baterías de litio almacena el excedente de energía; y tercero, un controlador inteligente distribuye la electricidad priorizando la clínica y la escuela cuando cae la red principal."
+        },
+        {
+          "id": "p3",
+          "text": "Durante los primeros seis meses de operación, la microrred evitó cuatro interrupciones críticas en la conservación de vacunas. Algunos vecinos opinan que este modelo es la solución definitiva para todas las regiones rurales del país, aunque los ingenieros recuerdan que requiere mantenimiento técnico constante y capacitación local."
+        },
+        {
+          "id": "p4",
+          "text": "Por ello, diez estudiantes de bachillerato de la comunidad se capacitaron para revisar el voltaje de las baterías y limpiar los paneles cada quincena."
+        }
+      ]
+    },
+    "evidence_paragraphs": [
+      "p1",
+      "p2"
+    ],
+    "prompt": "¿Qué dos instalaciones reciben prioridad eléctrica cuando falla la red principal?",
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "El mercado comunitario y el palacio municipal."
+      },
+      {
+        "id": "opt-b",
+        "text": "La clínica local y la telesecundaria."
+      },
+      {
+        "id": "opt-c",
+        "text": "Las viviendas particulares y el alumbrado público."
+      },
+      {
+        "id": "opt-d",
+        "text": "El taller mecánico y la biblioteca."
+      }
+    ],
+    "answer_key": {
+      "choice_id": "opt-b"
+    },
+    "hints": [
+      "Busca en el párrafo p2 qué lugares menciona el controlador inteligente al distribuir la electricidad.",
+      "Lee el final de p2: «priorizando la clínica y la escuela cuando cae la red principal»."
+    ],
+    "explanation": "Tanto p1 como p2 indican que las instalaciones priorizadas son la clínica local y la escuela (telesecundaria).",
+    "source": "Equipo Axo — UniconHub Hack 2026 (contenido original en español de México; dificultad estimada por expertos)",
+    "tags": [
+      "lectura-literal",
+      "detalles-explicitos"
+    ]
+  },
+  {
+    "id": "read-datos-003",
+    "skill_id": "datos",
+    "subject": "reading",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "passage": {
+      "passage_id": "movilidad-ciclovias",
+      "title": "Datos sobre ruedas en la ciudad",
+      "paragraphs": [
+        {
+          "id": "p1",
+          "text": "Entre 2019 y 2025, la extensión de ciclovías confinadas en la Ciudad de México creció de manera sostenida. Para evaluar su impacto real, un observatorio ciudadano instaló contadores automáticos en cuatro avenidas principales."
+        },
+        {
+          "id": "p2",
+          "text": "Los datos mostraron que los viajes diarios en bicicleta aumentaron 68 % en las vías que contaban con separadores físicos frente a los carriles marcados únicamente con pintura. Además, los horarios pico de ciclismo coincidieron con las entradas y salidas escolares y laborales, entre las siete y las nueve de la mañana."
+        },
+        {
+          "id": "p3",
+          "text": "El informe concluyó que la infraestructura protegida reduce la percepción de vulnerabilidad de nuevos ciclistas, especialmente adolescentes y mujeres, quienes antes evitaban circular junto al transporte pesado."
+        },
+        {
+          "id": "p4",
+          "text": "No obstante, el documento subrayó que la falta de biciestacionamientos seguros en las estaciones de transferencia modal sigue siendo un cuello de botella para quienes combinan bicicleta y metro."
+        }
+      ]
+    },
+    "evidence_paragraphs": [
+      "p2"
+    ],
+    "prompt": "¿En qué porcentaje aumentaron los viajes diarios en bicicleta en las vías con separadores físicos?",
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "19 %"
+      },
+      {
+        "id": "opt-b",
+        "text": "25 %"
+      },
+      {
+        "id": "opt-c",
+        "text": "68 %"
+      },
+      {
+        "id": "opt-d",
+        "text": "79 %"
+      }
+    ],
+    "answer_key": {
+      "choice_id": "opt-c"
+    },
+    "hints": [
+      "Localiza la cifra porcentual en la primera oración del segundo párrafo.",
+      "Busca el número acompañado del signo % en p2."
+    ],
+    "explanation": "El párrafo p2 establece textualmente que los viajes diarios en bicicleta aumentaron 68 % en las vías con separadores físicos.",
+    "source": "Equipo Axo — UniconHub Hack 2026 (contenido original en español de México; dificultad estimada por expertos)",
+    "tags": [
+      "lectura-literal",
+      "datos-cuantitativos"
+    ]
+  },
+  {
+    "id": "read-vocab-002",
+    "skill_id": "vocab",
+    "subject": "reading",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "passage": {
+      "passage_id": "movilidad-ciclovias",
+      "title": "Datos sobre ruedas en la ciudad",
+      "paragraphs": [
+        {
+          "id": "p1",
+          "text": "Entre 2019 y 2025, la extensión de ciclovías confinadas en la Ciudad de México creció de manera sostenida. Para evaluar su impacto real, un observatorio ciudadano instaló contadores automáticos en cuatro avenidas principales."
+        },
+        {
+          "id": "p2",
+          "text": "Los datos mostraron que los viajes diarios en bicicleta aumentaron 68 % en las vías que contaban con separadores físicos frente a los carriles marcados únicamente con pintura. Además, los horarios pico de ciclismo coincidieron con las entradas y salidas escolares y laborales, entre las siete y las nueve de la mañana."
+        },
+        {
+          "id": "p3",
+          "text": "El informe concluyó que la infraestructura protegida reduce la percepción de vulnerabilidad de nuevos ciclistas, especialmente adolescentes y mujeres, quienes antes evitaban circular junto al transporte pesado."
+        },
+        {
+          "id": "p4",
+          "text": "No obstante, el documento subrayó que la falta de biciestacionamientos seguros en las estaciones de transferencia modal sigue siendo un cuello de botella para quienes combinan bicicleta y metro."
+        }
+      ]
+    },
+    "evidence_paragraphs": [
+      "p4"
+    ],
+    "prompt": "En el párrafo 4, ¿qué significa la expresión «cuello de botella»?",
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "Un envase de vidrio abandonado en la ciclovía."
+      },
+      {
+        "id": "opt-b",
+        "text": "Un obstáculo o punto que limita el funcionamiento fluido de un sistema."
+      },
+      {
+        "id": "opt-c",
+        "text": "Una curva muy cerrada donde los ciclistas deben frenar."
+      },
+      {
+        "id": "opt-d",
+        "text": "Un descuento económico para usar el metro."
+      }
+    ],
+    "answer_key": {
+      "choice_id": "opt-b"
+    },
+    "hints": [
+      "Relee la oración completa en p4: «la falta de biciestacionamientos seguros... sigue siendo un cuello de botella para quienes combinan bicicleta y metro».",
+      "Piensa qué efecto tiene la falta de estacionamiento seguro en quienes desean hacer viajes combinados."
+    ],
+    "explanation": "En ese contexto, «cuello de botella» es una metáfora que designa una limitación u obstáculo que frena la intermodalidad entre bicicleta y metro.",
+    "source": "Equipo Axo — UniconHub Hack 2026 (contenido original en español de México; dificultad estimada por expertos)",
+    "tags": [
+      "vocabulario-contextual",
+      "lenguaje-figurado"
+    ]
+  },
+  {
+    "id": "read-inferencia-003",
+    "skill_id": "inferencia",
+    "subject": "reading",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "passage": {
+      "passage_id": "movilidad-ciclovias",
+      "title": "Datos sobre ruedas en la ciudad",
+      "paragraphs": [
+        {
+          "id": "p1",
+          "text": "Entre 2019 y 2025, la extensión de ciclovías confinadas en la Ciudad de México creció de manera sostenida. Para evaluar su impacto real, un observatorio ciudadano instaló contadores automáticos en cuatro avenidas principales."
+        },
+        {
+          "id": "p2",
+          "text": "Los datos mostraron que los viajes diarios en bicicleta aumentaron 68 % en las vías que contaban con separadores físicos frente a los carriles marcados únicamente con pintura. Además, los horarios pico de ciclismo coincidieron con las entradas y salidas escolares y laborales, entre las siete y las nueve de la mañana."
+        },
+        {
+          "id": "p3",
+          "text": "El informe concluyó que la infraestructura protegida reduce la percepción de vulnerabilidad de nuevos ciclistas, especialmente adolescentes y mujeres, quienes antes evitaban circular junto al transporte pesado."
+        },
+        {
+          "id": "p4",
+          "text": "No obstante, el documento subrayó que la falta de biciestacionamientos seguros en las estaciones de transferencia modal sigue siendo un cuello de botella para quienes combinan bicicleta y metro."
+        }
+      ]
+    },
+    "evidence_paragraphs": [
+      "p2",
+      "p3"
+    ],
+    "prompt": "A partir de los párrafos 2 y 3, ¿por qué los carriles marcados solo con pintura tuvieron menos crecimiento que las ciclovías con separadores físicos?",
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "Porque la pintura se borra en menos de una semana."
+      },
+      {
+        "id": "opt-b",
+        "text": "Porque sin barreras físicas muchos usuarios siguen sintiéndose expuestos al tránsito motorizado."
+      },
+      {
+        "id": "opt-c",
+        "text": "Porque está prohibido circular en bicicleta entre las siete y las nueve de la mañana."
+      },
+      {
+        "id": "opt-d",
+        "text": "Porque los contadores automáticos no funcionan en carriles pintados."
+      }
+    ],
+    "answer_key": {
+      "choice_id": "opt-b"
+    },
+    "hints": [
+      "Relaciona el aumento de 68 % en vías con separadores físicos (p2) con la explicación del párrafo p3 sobre la «percepción de vulnerabilidad».",
+      "Observa quiénes evitaban circular junto al transporte pesado antes de contar con infraestructura protegida."
+    ],
+    "explanation": "El párrafo p3 explica que la infraestructura protegida reduce la percepción de vulnerabilidad frente al transporte pesado; por ello, los carriles solo pintados atraen menos ciclistas.",
+    "source": "Equipo Axo — UniconHub Hack 2026 (contenido original en español de México; dificultad estimada por expertos)",
+    "tags": [
+      "inferencia",
+      "movilidad-urbana"
+    ]
+  },
+  {
+    "id": "read-idea-002",
+    "skill_id": "idea",
+    "subject": "reading",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "passage": {
+      "passage_id": "movilidad-ciclovias",
+      "title": "Datos sobre ruedas en la ciudad",
+      "paragraphs": [
+        {
+          "id": "p1",
+          "text": "Entre 2019 y 2025, la extensión de ciclovías confinadas en la Ciudad de México creció de manera sostenida. Para evaluar su impacto real, un observatorio ciudadano instaló contadores automáticos en cuatro avenidas principales."
+        },
+        {
+          "id": "p2",
+          "text": "Los datos mostraron que los viajes diarios en bicicleta aumentaron 68 % en las vías que contaban con separadores físicos frente a los carriles marcados únicamente con pintura. Además, los horarios pico de ciclismo coincidieron con las entradas y salidas escolares y laborales, entre las siete y las nueve de la mañana."
+        },
+        {
+          "id": "p3",
+          "text": "El informe concluyó que la infraestructura protegida reduce la percepción de vulnerabilidad de nuevos ciclistas, especialmente adolescentes y mujeres, quienes antes evitaban circular junto al transporte pesado."
+        },
+        {
+          "id": "p4",
+          "text": "No obstante, el documento subrayó que la falta de biciestacionamientos seguros en las estaciones de transferencia modal sigue siendo un cuello de botella para quienes combinan bicicleta y metro."
+        }
+      ]
+    },
+    "evidence_paragraphs": [
+      "p1",
+      "p2",
+      "p3",
+      "p4"
+    ],
+    "prompt": "¿Cuál es la idea central que articula todo el informe descrito en el texto?",
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "Las ciclovías confinadas impulsan notablemente el uso de la bicicleta, aunque aún falta mejorar la conexión con el transporte masivo."
+      },
+      {
+        "id": "opt-b",
+        "text": "Los estudiantes usan la bicicleta únicamente entre las siete y las nueve de la mañana."
+      },
+      {
+        "id": "opt-c",
+        "text": "El metro de la Ciudad de México debería construir más estaciones en cuatro avenidas."
+      },
+      {
+        "id": "opt-d",
+        "text": "Los contadores automáticos demostraron que los automóviles ya no circulan por avenidas principales."
+      }
+    ],
+    "answer_key": {
+      "choice_id": "opt-a"
+    },
+    "hints": [
+      "Busca la opción que combine tanto el logro principal (p2-p3) como el reto pendiente señalado al final (p4).",
+      "Fíjate en el contraste introducido por «No obstante» en el último párrafo."
+    ],
+    "explanation": "El texto presenta el crecimiento del uso ciclista gracias a la protección física (p1-p3) y concluye con el reto pendiente de los biciestacionamientos para conectar con el metro (p4).",
+    "source": "Equipo Axo — UniconHub Hack 2026 (contenido original en español de México; dificultad estimada por expertos)",
+    "tags": [
+      "idea-principal",
+      "estructura-textual"
+    ]
+  },
+  {
+    "id": "read-secuencia-002",
+    "skill_id": "secuencia",
+    "subject": "reading",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "passage": {
+      "passage_id": "fisica-videojuegos",
+      "title": "La gravedad detrás de un salto virtual",
+      "paragraphs": [
+        {
+          "id": "p1",
+          "text": "Cuando un personaje salta en un videojuego de plataformas, el jugador espera que el movimiento se sienta ágil y predecible. Sin embargo, si los programadores aplicaran exactamente la gravedad real de la Tierra sin ajustes, muchos saltos se sentirían lentos y difíciles de controlar."
+        },
+        {
+          "id": "p2",
+          "text": "Para lograr una respuesta precisa, los diseñadores dividen el salto en fases: aplican un impulso vertical inicial alto al presionar el botón, reducen ligeramente la gravedad mientras el personaje sube y la aumentan durante la caída para que aterrice con firmeza."
+        },
+        {
+          "id": "p3",
+          "text": "Otra técnica habitual es el llamado «tiempo coyote»: un margen de apenas cien milisegundos después de que el personaje abandona el borde de una plataforma, durante el cual el juego todavía permite ejecutar el salto. Este recurso compensa el retraso natural de los reflejos humanos."
+        },
+        {
+          "id": "p4",
+          "text": "De este modo, la física en los videojuegos no busca imitar la realidad al pie de la letra, sino traducir leyes matemáticas en una experiencia justa y comprensible para quien juega."
+        }
+      ]
+    },
+    "evidence_paragraphs": [
+      "p2"
+    ],
+    "prompt": "Según el párrafo 2, ¿en qué orden se aplican los ajustes físicos durante un salto en un videojuego de plataformas?",
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "Aumento de gravedad → impulso vertical → reducción de gravedad."
+      },
+      {
+        "id": "opt-b",
+        "text": "Impulso vertical inicial → reducción ligera de gravedad al subir → aumento de gravedad al caer."
+      },
+      {
+        "id": "opt-c",
+        "text": "Reducción de gravedad al aterrizar → impulso horizontal → tiempo coyote."
+      },
+      {
+        "id": "opt-d",
+        "text": "Gravedad real constante → pausa en el aire → caída libre."
+      }
+    ],
+    "answer_key": {
+      "choice_id": "opt-b"
+    },
+    "hints": [
+      "Revisa la secuencia descrita en el párrafo p2 desde el momento en que se presiona el botón hasta el aterrizaje.",
+      "Identifica qué pasa al presionar el botón, qué pasa «mientras el personaje sube» y qué pasa «durante la caída»."
+    ],
+    "explanation": "El párrafo p2 detalla tres pasos secuenciales: impulso vertical inicial alto, reducción ligera de gravedad en el ascenso y aumento de gravedad en la caída.",
+    "source": "Equipo Axo — UniconHub Hack 2026 (contenido original en español de México; dificultad estimada por expertos)",
+    "tags": [
+      "secuencia",
+      "videojuegos",
+      "fisica"
+    ]
+  },
+  {
+    "id": "read-vocab-003",
+    "skill_id": "vocab",
+    "subject": "reading",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "passage": {
+      "passage_id": "fisica-videojuegos",
+      "title": "La gravedad detrás de un salto virtual",
+      "paragraphs": [
+        {
+          "id": "p1",
+          "text": "Cuando un personaje salta en un videojuego de plataformas, el jugador espera que el movimiento se sienta ágil y predecible. Sin embargo, si los programadores aplicaran exactamente la gravedad real de la Tierra sin ajustes, muchos saltos se sentirían lentos y difíciles de controlar."
+        },
+        {
+          "id": "p2",
+          "text": "Para lograr una respuesta precisa, los diseñadores dividen el salto en fases: aplican un impulso vertical inicial alto al presionar el botón, reducen ligeramente la gravedad mientras el personaje sube y la aumentan durante la caída para que aterrice con firmeza."
+        },
+        {
+          "id": "p3",
+          "text": "Otra técnica habitual es el llamado «tiempo coyote»: un margen de apenas cien milisegundos después de que el personaje abandona el borde de una plataforma, durante el cual el juego todavía permite ejecutar el salto. Este recurso compensa el retraso natural de los reflejos humanos."
+        },
+        {
+          "id": "p4",
+          "text": "De este modo, la física en los videojuegos no busca imitar la realidad al pie de la letra, sino traducir leyes matemáticas en una experiencia justa y comprensible para quien juega."
+        }
+      ]
+    },
+    "evidence_paragraphs": [
+      "p3"
+    ],
+    "prompt": "En el párrafo 3, ¿qué función cumple el «margen» mencionado en la definición del «tiempo coyote»?",
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "Una línea decorativa dibujada al borde de la pantalla."
+      },
+      {
+        "id": "opt-b",
+        "text": "Un breve intervalo de tolerancia temporal para ejecutar una acción."
+      },
+      {
+        "id": "opt-c",
+        "text": "La distancia máxima que puede recorrer un personaje."
+      },
+      {
+        "id": "opt-d",
+        "text": "Un error de programación que hace caer al personaje antes de tiempo."
+      }
+    ],
+    "answer_key": {
+      "choice_id": "opt-b"
+    },
+    "hints": [
+      "Observa cómo se cuantifica ese margen en el párrafo p3: «de apenas cien milisegundos después de que el personaje abandona el borde».",
+      "Relaciona ese intervalo con su propósito: compensar el retraso de los reflejos humanos."
+    ],
+    "explanation": "En el contexto de p3, «margen» se refiere a una ventana o intervalo breve de tolerancia (100 ms) que permite saltar justo después de dejar la plataforma.",
+    "source": "Equipo Axo — UniconHub Hack 2026 (contenido original en español de México; dificultad estimada por expertos)",
+    "tags": [
+      "vocabulario-contextual",
+      "precision-lexica"
+    ]
+  },
+  {
+    "id": "read-opinion-002",
+    "skill_id": "opinion",
+    "subject": "reading",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "passage": {
+      "passage_id": "fisica-videojuegos",
+      "title": "La gravedad detrás de un salto virtual",
+      "paragraphs": [
+        {
+          "id": "p1",
+          "text": "Cuando un personaje salta en un videojuego de plataformas, el jugador espera que el movimiento se sienta ágil y predecible. Sin embargo, si los programadores aplicaran exactamente la gravedad real de la Tierra sin ajustes, muchos saltos se sentirían lentos y difíciles de controlar."
+        },
+        {
+          "id": "p2",
+          "text": "Para lograr una respuesta precisa, los diseñadores dividen el salto en fases: aplican un impulso vertical inicial alto al presionar el botón, reducen ligeramente la gravedad mientras el personaje sube y la aumentan durante la caída para que aterrice con firmeza."
+        },
+        {
+          "id": "p3",
+          "text": "Otra técnica habitual es el llamado «tiempo coyote»: un margen de apenas cien milisegundos después de que el personaje abandona el borde de una plataforma, durante el cual el juego todavía permite ejecutar el salto. Este recurso compensa el retraso natural de los reflejos humanos."
+        },
+        {
+          "id": "p4",
+          "text": "De este modo, la física en los videojuegos no busca imitar la realidad al pie de la letra, sino traducir leyes matemáticas en una experiencia justa y comprensible para quien juega."
+        }
+      ]
+    },
+    "evidence_paragraphs": [
+      "p1",
+      "p4"
+    ],
+    "prompt": "¿Cuál de los siguientes enunciados refleja una postura o criterio de diseño defendido por el autor del texto?",
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "Cien milisegundos equivalen a una décima de segundo."
+      },
+      {
+        "id": "opt-b",
+        "text": "La física en los videojuegos debe priorizar una experiencia justa y comprensible sobre la imitación literal de la realidad."
+      },
+      {
+        "id": "opt-c",
+        "text": "Los diseñadores dividen el salto en tres fases."
+      },
+      {
+        "id": "opt-d",
+        "text": "El tiempo coyote se activa cuando el personaje abandona el borde de una plataforma."
+      }
+    ],
+    "answer_key": {
+      "choice_id": "opt-b"
+    },
+    "hints": [
+      "Busca la conclusión valorativa del autor en el último párrafo (p4).",
+      "Distingue entre cómo funciona técnicamente el juego (hechos) y qué criterio de diseño propone el texto («no busca... sino traducir... en una experiencia justa»)."
+    ],
+    "explanation": "En el párrafo p4, el autor sintetiza su postura evaluativa: el objetivo del diseño físico en videojuegos no es el realismo estricto, sino una experiencia justa y comprensible.",
+    "source": "Equipo Axo — UniconHub Hack 2026 (contenido original en español de México; dificultad estimada por expertos)",
+    "tags": [
+      "criterio-autor",
+      "hecho-vs-opinion"
+    ]
+  },
+  {
+    "id": "read-inferencia-004",
+    "skill_id": "inferencia",
+    "subject": "reading",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "passage": {
+      "passage_id": "fisica-videojuegos",
+      "title": "La gravedad detrás de un salto virtual",
+      "paragraphs": [
+        {
+          "id": "p1",
+          "text": "Cuando un personaje salta en un videojuego de plataformas, el jugador espera que el movimiento se sienta ágil y predecible. Sin embargo, si los programadores aplicaran exactamente la gravedad real de la Tierra sin ajustes, muchos saltos se sentirían lentos y difíciles de controlar."
+        },
+        {
+          "id": "p2",
+          "text": "Para lograr una respuesta precisa, los diseñadores dividen el salto en fases: aplican un impulso vertical inicial alto al presionar el botón, reducen ligeramente la gravedad mientras el personaje sube y la aumentan durante la caída para que aterrice con firmeza."
+        },
+        {
+          "id": "p3",
+          "text": "Otra técnica habitual es el llamado «tiempo coyote»: un margen de apenas cien milisegundos después de que el personaje abandona el borde de una plataforma, durante el cual el juego todavía permite ejecutar el salto. Este recurso compensa el retraso natural de los reflejos humanos."
+        },
+        {
+          "id": "p4",
+          "text": "De este modo, la física en los videojuegos no busca imitar la realidad al pie de la letra, sino traducir leyes matemáticas en una experiencia justa y comprensible para quien juega."
+        }
+      ]
+    },
+    "evidence_paragraphs": [
+      "p1",
+      "p3"
+    ],
+    "prompt": "¿Qué sucedería probablemente si un videojuego de plataformas eliminara tanto los ajustes de gravedad como el «tiempo coyote»?",
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "Los jugadores sentirían el control más torpe y fallarían saltos en los bordes por el retraso natural de sus reflejos."
+      },
+      {
+        "id": "opt-b",
+        "text": "El personaje saltaría el doble de alto de forma automática."
+      },
+      {
+        "id": "opt-c",
+        "text": "El juego funcionaría sin necesidad de operaciones matemáticas."
+      },
+      {
+        "id": "opt-d",
+        "text": "Los reflejos humanos se volverían cien milisegundos más rápidos."
+      }
+    ],
+    "answer_key": {
+      "choice_id": "opt-a"
+    },
+    "hints": [
+      "Revisa qué problema evita cada técnica: en p1 se dice qué pasa con la gravedad real sin ajustes, y en p3 qué compensa el tiempo coyote.",
+      "Combina ambos efectos: saltos lentos/difíciles de controlar + falta de compensación para el retraso de reflejos en los bordes."
+    ],
+    "explanation": "Según p1 y p3, sin esos recursos los saltos serían lentos y difíciles de controlar y los jugadores perderían precisión en los bordes debido al retraso natural de sus reflejos.",
+    "source": "Equipo Axo — UniconHub Hack 2026 (contenido original en español de México; dificultad estimada por expertos)",
+    "tags": [
+      "inferencia",
+      "prediccion-textual"
+    ]
+  },
+  {
+    "id": "read-datos-004",
+    "skill_id": "datos",
+    "subject": "reading",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "passage": {
+      "passage_id": "cacao-mesoamerica",
+      "title": "El cacao como moneda y medida",
+      "paragraphs": [
+        {
+          "id": "p1",
+          "text": "Mucho antes de la llegada de las monedas metálicas a Mesoamérica, las semillas de cacao cumplían una doble función: eran la base de bebidas rituales y funcionaban como unidad de cambio en los mercados regionales."
+        },
+        {
+          "id": "p2",
+          "text": "Registros históricos del siglo XVI indican que existían equivalencias precisas: un tomate pequeño podía intercambiarse por una semilla de cacao, un aguacate maduro valía tres semillas y un conejo alcanzaba hasta treinta semillas, dependiendo de la temporada."
+        },
+        {
+          "id": "p3",
+          "text": "Debido a su valor económico, surgieron falsificadores que vaciaban la cáscara del cacao y la rellenaban con barro o arena para engañar a los compradores. Por esta razón, los comerciantes experimentados apretaban cada semilla con los dedos antes de aceptar un pago."
+        },
+        {
+          "id": "p4",
+          "text": "Esta práctica demuestra que el comercio prehispánico exigía tanto cálculo aritmético como verificación física de la calidad de los bienes intercambiados."
+        }
+      ]
+    },
+    "evidence_paragraphs": [
+      "p2"
+    ],
+    "prompt": "De acuerdo con los registros del siglo XVI citados en el texto, ¿cuántas semillas de cacao equivalían al valor de un conejo?",
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "Una semilla"
+      },
+      {
+        "id": "opt-b",
+        "text": "Tres semillas"
+      },
+      {
+        "id": "opt-c",
+        "text": "Dieciséis semillas"
+      },
+      {
+        "id": "opt-d",
+        "text": "Hasta treinta semillas"
+      }
+    ],
+    "answer_key": {
+      "choice_id": "opt-d"
+    },
+    "hints": [
+      "Consulta la lista de equivalencias en el párrafo p2.",
+      "Compara los valores mencionados: tomate pequeño (1), aguacate maduro (3) y conejo."
+    ],
+    "explanation": "El párrafo p2 indica que un conejo alcanzaba hasta treinta semillas de cacao, dependiendo de la temporada.",
+    "source": "Equipo Axo — UniconHub Hack 2026 (contenido original en español de México; dificultad estimada por expertos)",
+    "tags": [
+      "lectura-literal",
+      "historia-mexico"
+    ]
+  },
+  {
+    "id": "read-secuencia-003",
+    "skill_id": "secuencia",
+    "subject": "reading",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "passage": {
+      "passage_id": "cacao-mesoamerica",
+      "title": "El cacao como moneda y medida",
+      "paragraphs": [
+        {
+          "id": "p1",
+          "text": "Mucho antes de la llegada de las monedas metálicas a Mesoamérica, las semillas de cacao cumplían una doble función: eran la base de bebidas rituales y funcionaban como unidad de cambio en los mercados regionales."
+        },
+        {
+          "id": "p2",
+          "text": "Registros históricos del siglo XVI indican que existían equivalencias precisas: un tomate pequeño podía intercambiarse por una semilla de cacao, un aguacate maduro valía tres semillas y un conejo alcanzaba hasta treinta semillas, dependiendo de la temporada."
+        },
+        {
+          "id": "p3",
+          "text": "Debido a su valor económico, surgieron falsificadores que vaciaban la cáscara del cacao y la rellenaban con barro o arena para engañar a los compradores. Por esta razón, los comerciantes experimentados apretaban cada semilla con los dedos antes de aceptar un pago."
+        },
+        {
+          "id": "p4",
+          "text": "Esta práctica demuestra que el comercio prehispánico exigía tanto cálculo aritmético como verificación física de la calidad de los bienes intercambiados."
+        }
+      ]
+    },
+    "evidence_paragraphs": [
+      "p3"
+    ],
+    "prompt": "Según el párrafo 3, ¿qué cadena de hechos explica por qué los comerciantes apretaban cada semilla de cacao?",
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "Faltaba barro en los mercados → los compradores pedían descuentos → se usaron monedas metálicas."
+      },
+      {
+        "id": "opt-b",
+        "text": "El cacao tenía alto valor → surgieron falsificadores que rellenaban cáscaras con barro o arena → los comerciantes verificaban las semillas al tacto."
+      },
+      {
+        "id": "opt-c",
+        "text": "Los comerciantes apretaban las semillas → las cáscaras se vaciaban → se preparaban bebidas rituales."
+      },
+      {
+        "id": "opt-d",
+        "text": "Llegaron monedas metálicas → bajó el precio del aguacate → desapareció el comercio regional."
+      }
+    ],
+    "answer_key": {
+      "choice_id": "opt-b"
+    },
+    "hints": [
+      "Sigue los conectores causales en el párrafo p3: «Debido a su valor...» y «Por esta razón...».",
+      "Ordena el origen del problema, la acción de los falsificadores y la respuesta de los comerciantes."
+    ],
+    "explanation": "El párrafo p3 establece la secuencia: el valor económico del cacao motivó la falsificación con barro o arena, y por esa razón los comerciantes apretaban cada semilla para comprobarla.",
+    "source": "Equipo Axo — UniconHub Hack 2026 (contenido original en español de México; dificultad estimada por expertos)",
+    "tags": [
+      "secuencia",
+      "cadena-causal"
+    ]
+  },
+  {
+    "id": "read-opinion-003",
+    "skill_id": "opinion",
+    "subject": "reading",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "passage": {
+      "passage_id": "cacao-mesoamerica",
+      "title": "El cacao como moneda y medida",
+      "paragraphs": [
+        {
+          "id": "p1",
+          "text": "Mucho antes de la llegada de las monedas metálicas a Mesoamérica, las semillas de cacao cumplían una doble función: eran la base de bebidas rituales y funcionaban como unidad de cambio en los mercados regionales."
+        },
+        {
+          "id": "p2",
+          "text": "Registros históricos del siglo XVI indican que existían equivalencias precisas: un tomate pequeño podía intercambiarse por una semilla de cacao, un aguacate maduro valía tres semillas y un conejo alcanzaba hasta treinta semillas, dependiendo de la temporada."
+        },
+        {
+          "id": "p3",
+          "text": "Debido a su valor económico, surgieron falsificadores que vaciaban la cáscara del cacao y la rellenaban con barro o arena para engañar a los compradores. Por esta razón, los comerciantes experimentados apretaban cada semilla con los dedos antes de aceptar un pago."
+        },
+        {
+          "id": "p4",
+          "text": "Esta práctica demuestra que el comercio prehispánico exigía tanto cálculo aritmético como verificación física de la calidad de los bienes intercambiados."
+        }
+      ]
+    },
+    "evidence_paragraphs": [
+      "p2",
+      "p3",
+      "p4"
+    ],
+    "prompt": "¿Cuál de las siguientes afirmaciones representa una conclusión interpretativa del autor sobre el comercio prehispánico y no un dato aislado de los registros?",
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "Un tomate pequeño podía intercambiarse por una semilla de cacao."
+      },
+      {
+        "id": "opt-b",
+        "text": "Algunos falsificadores rellenaban las cáscaras con barro o arena."
+      },
+      {
+        "id": "opt-c",
+        "text": "El comercio prehispánico exigía tanto cálculo aritmético como verificación física de la calidad de los bienes."
+      },
+      {
+        "id": "opt-d",
+        "text": "Los comerciantes apretaban las semillas con los dedos antes de aceptar un pago."
+      }
+    ],
+    "answer_key": {
+      "choice_id": "opt-c"
+    },
+    "hints": [
+      "Revisa el último párrafo (p4), donde el autor resume lo que «demuestra» toda la evidencia anterior.",
+      "Distingue entre los hechos históricos concretos (p2-p3) y la tesis general formulada en p4."
+    ],
+    "explanation": "En el párrafo p4, el autor formula una síntesis interpretativa a partir de los hechos previos: que el comercio exigía cálculo aritmético y verificación física.",
+    "source": "Equipo Axo — UniconHub Hack 2026 (contenido original en español de México; dificultad estimada por expertos)",
+    "tags": [
+      "tesis-e-interpretacion",
+      "lectura-critica"
+    ]
+  },
+  {
+    "id": "read-idea-003",
+    "skill_id": "idea",
+    "subject": "reading",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "passage": {
+      "passage_id": "cacao-mesoamerica",
+      "title": "El cacao como moneda y medida",
+      "paragraphs": [
+        {
+          "id": "p1",
+          "text": "Mucho antes de la llegada de las monedas metálicas a Mesoamérica, las semillas de cacao cumplían una doble función: eran la base de bebidas rituales y funcionaban como unidad de cambio en los mercados regionales."
+        },
+        {
+          "id": "p2",
+          "text": "Registros históricos del siglo XVI indican que existían equivalencias precisas: un tomate pequeño podía intercambiarse por una semilla de cacao, un aguacate maduro valía tres semillas y un conejo alcanzaba hasta treinta semillas, dependiendo de la temporada."
+        },
+        {
+          "id": "p3",
+          "text": "Debido a su valor económico, surgieron falsificadores que vaciaban la cáscara del cacao y la rellenaban con barro o arena para engañar a los compradores. Por esta razón, los comerciantes experimentados apretaban cada semilla con los dedos antes de aceptar un pago."
+        },
+        {
+          "id": "p4",
+          "text": "Esta práctica demuestra que el comercio prehispánico exigía tanto cálculo aritmético como verificación física de la calidad de los bienes intercambiados."
+        }
+      ]
+    },
+    "evidence_paragraphs": [
+      "p1",
+      "p2",
+      "p3",
+      "p4"
+    ],
+    "prompt": "¿De qué trata principalmente todo el texto?",
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "De cómo se preparaban las bebidas rituales de cacao en el siglo XVI."
+      },
+      {
+        "id": "opt-b",
+        "text": "Del uso del cacao como moneda en Mesoamérica, sus equivalencias y las medidas contra su falsificación."
+      },
+      {
+        "id": "opt-c",
+        "text": "De los precios actuales del tomate y el aguacate en los mercados."
+      },
+      {
+        "id": "opt-d",
+        "text": "De la fabricación de monedas metálicas en Mesoamérica."
+      }
+    ],
+    "answer_key": {
+      "choice_id": "opt-b"
+    },
+    "hints": [
+      "Revisa el título y la idea que conecta los cuatro párrafos desde el inicio hasta el cierre.",
+      "Observa que el texto explica su función como moneda (p1), sus equivalencias (p2) y cómo evitaban engaños al pagar (p3-p4)."
+    ],
+    "explanation": "El texto explica de forma integral cómo funcionaban las semillas de cacao como moneda y unidad de medida en Mesoamérica y cómo se verificaba su autenticidad.",
+    "source": "Equipo Axo — UniconHub Hack 2026 (contenido original en español de México; dificultad estimada por expertos)",
+    "tags": [
+      "idea-principal",
+      "comprension-global"
+    ]
+  },
+  {
+    "id": "spell-accent-001",
+    "skill_id": "accent",
+    "subject": "spelling",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "prompt": "Selecciona la opción escrita correctamente para completar la oración: «El equipo entregó el ______ final antes de que cerrara la plataforma».",
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "análisis"
+      },
+      {
+        "id": "opt-b",
+        "text": "analisis"
+      },
+      {
+        "id": "opt-c",
+        "text": "analísis"
+      },
+      {
+        "id": "opt-d",
+        "text": "ánalisis"
+      }
+    ],
+    "answer_key": {
+      "choice_id": "opt-a"
+    },
+    "hints": [
+      "Identifica cuál es la sílaba tónica al pronunciar la palabra en voz alta: a-NÁ-li-sis.",
+      "Es una palabra esdrújula (la fuerza de voz recae en la antepenúltima sílaba), y en español todas las esdrújulas llevan tilde."
+    ],
+    "explanation": "«Análisis» es una palabra esdrújula (a-ná-li-sis), por lo que siempre lleva tilde en la segunda «a».",
+    "source": "Equipo Axo — UniconHub Hack 2026 (contenido original en español de México; dificultad estimada por expertos)",
+    "tags": [
+      "ortografia",
+      "esdrujulas",
+      "acentuacion"
+    ]
+  },
+  {
+    "id": "spell-accent-002",
+    "skill_id": "accent",
+    "subject": "spelling",
+    "difficulty": "medium",
+    "type": "short_text",
+    "prompt": "Escribe correctamente la palabra que falta (con tilde) para completar la oración: «Nadie supo ______ había dejado abierta la puerta del laboratorio» (pronombre interrogativo indirecto).",
+    "answer_key": {
+      "accepted": [
+        "quién"
+      ],
+      "case_sensitive": false,
+      "strip_accents": false
+    },
+    "hints": [
+      "Aunque la oración no tiene signos de interrogación, plantea una pregunta indirecta sobre una persona.",
+      "Los pronombres interrogativos y exclamativos (qué, quién, cuál, dónde, cuándo) llevan tilde diacrítica."
+    ],
+    "explanation": "«Quién» lleva tilde diacrítica porque introduce una oración interrogativa indirecta («Nadie supo quién...»).",
+    "source": "Equipo Axo — UniconHub Hack 2026 (contenido original en español de México; dificultad estimada por expertos)",
+    "tags": [
+      "ortografia",
+      "tilde-diacritica",
+      "texto-corto"
+    ]
+  },
+  {
+    "id": "spell-bv-001",
+    "skill_id": "bv",
+    "subject": "spelling",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "prompt": "Elige la forma correcta para completar la oración: «El sensor de temperatura ______ datos cada diez segundos durante la prueba».",
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "enviava"
+      },
+      {
+        "id": "opt-b",
+        "text": "embiaba"
+      },
+      {
+        "id": "opt-c",
+        "text": "enviaba"
+      },
+      {
+        "id": "opt-d",
+        "text": "emviava"
+      }
+    ],
+    "answer_key": {
+      "choice_id": "opt-c"
+    },
+    "hints": [
+      "Revisa la terminación del pretérito imperfecto de los verbos terminados en -ar (como caminaba, estudiaba, enviaba).",
+      "Las terminaciones -aba, -abas, -ábamos, -aban siempre se escriben con «b», y el verbo enviar conserva su «v» inicial."
+    ],
+    "explanation": "«Enviaba» se escribe con «v» por derivar de enviar y con «b» en la terminación «-aba» del pretérito imperfecto.",
+    "source": "Equipo Axo — UniconHub Hack 2026 (contenido original en español de México; dificultad estimada por expertos)",
+    "tags": [
+      "ortografia",
+      "uso-b-v",
+      "verbos"
+    ]
+  },
+  {
+    "id": "spell-bv-002",
+    "skill_id": "bv",
+    "subject": "spelling",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "prompt": "Selecciona la palabra escrita correctamente: «La profesora destacó la ______ del diseño propuesto por el equipo».",
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "movilidad"
+      },
+      {
+        "id": "opt-b",
+        "text": "mobilidad"
+      },
+      {
+        "id": "opt-c",
+        "text": "movilidaz"
+      },
+      {
+        "id": "opt-d",
+        "text": "mobildad"
+      }
+    ],
+    "answer_key": {
+      "choice_id": "opt-a"
+    },
+    "hints": [
+      "Relaciona la palabra con su raíz: móvil y mover.",
+      "Aunque la terminación -bilidad suele escribirse con «b» (amabilidad, habilidad), «movilidad» es una excepción porque conserva la «v» de móvil."
+    ],
+    "explanation": "«Movilidad» se escribe con «v» porque proviene de «móvil» y «mover» (excepción a la regla general de -bilidad).",
+    "source": "Equipo Axo — UniconHub Hack 2026 (contenido original en español de México; dificultad estimada por expertos)",
+    "tags": [
+      "ortografia",
+      "uso-b-v",
+      "excepciones"
+    ]
+  },
+  {
+    "id": "spell-csz-001",
+    "skill_id": "csz",
+    "subject": "spelling",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "prompt": "Elige la opción correcta para completar la oración: «El jurado tomó la ______ de premiar ambos prototipos por su creatividad».",
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "desición"
+      },
+      {
+        "id": "opt-b",
+        "text": "decisión"
+      },
+      {
+        "id": "opt-c",
+        "text": "decición"
+      },
+      {
+        "id": "opt-d",
+        "text": "desisión"
+      }
+    ],
+    "answer_key": {
+      "choice_id": "opt-b"
+    },
+    "hints": [
+      "Piensa en el verbo de la misma familia léxica: decidir (se escribe con «c» en la segunda sílaba).",
+      "La primera sílaba lleva «c» (de-ci-) y la terminación es «-sión» con «s» y tilde en la «o»."
+    ],
+    "explanation": "«Decisión» conserva la «c» de «decidir» en la sílaba «ci» y termina en «-sión» con «s» y tilde.",
+    "source": "Equipo Axo — UniconHub Hack 2026 (contenido original en español de México; dificultad estimada por expertos)",
+    "tags": [
+      "ortografia",
+      "uso-c-s-z",
+      "familia-lexica"
+    ]
+  },
+  {
+    "id": "spell-csz-002",
+    "skill_id": "csz",
+    "subject": "spelling",
+    "difficulty": "hard",
+    "type": "short_text",
+    "prompt": "Escribe en plural la palabra «lápiz» (recuerda el cambio ortográfico de la z ante la e y conserva la tilde):",
+    "answer_key": {
+      "accepted": [
+        "lápices"
+      ],
+      "case_sensitive": false,
+      "strip_accents": false
+    },
+    "hints": [
+      "En español, las palabras terminadas en «z» cambian esa letra por «c» al formar el plural antes de «-es».",
+      "La sílaba tónica sigue siendo la primera (LÁ-pi-ces), por lo que continúa siendo esdrújula y mantiene su tilde."
+    ],
+    "explanation": "El plural de «lápiz» es «lápices»: la «z» cambia a «c» delante de «e» y mantiene la tilde por ser palabra esdrújula.",
+    "source": "Equipo Axo — UniconHub Hack 2026 (contenido original en español de México; dificultad estimada por expertos)",
+    "tags": [
+      "ortografia",
+      "plural-en-ces",
+      "texto-corto"
+    ]
+  },
+  {
+    "id": "spell-gj-001",
+    "skill_id": "gj",
+    "subject": "spelling",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "prompt": "Selecciona la opción escrita correctamente: «Antes de publicar el artículo, la editora ______ las gráficas de resultados».",
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "corrijió"
+      },
+      {
+        "id": "opt-b",
+        "text": "corrigió"
+      },
+      {
+        "id": "opt-c",
+        "text": "corrijio"
+      },
+      {
+        "id": "opt-d",
+        "text": "corigió"
+      }
+    ],
+    "answer_key": {
+      "choice_id": "opt-b"
+    },
+    "hints": [
+      "Observa el infinitivo del verbo: corregir (terminado en -gir).",
+      "Los verbos terminados en -ger y -gir conservan la «g» delante de «e» e «i» (corrigió, eligió, protegió)."
+    ],
+    "explanation": "«Corrigió» conserva la «g» del infinitivo «corregir» porque va seguida de la vocal «i».",
+    "source": "Equipo Axo — UniconHub Hack 2026 (contenido original en español de México; dificultad estimada por expertos)",
+    "tags": [
+      "ortografia",
+      "uso-g-j",
+      "verbos-ger-gir"
+    ]
+  },
+  {
+    "id": "spell-h-001",
+    "skill_id": "h",
+    "subject": "spelling",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "prompt": "Elige la palabra escrita correctamente para completar la oración: «El informe técnico incluyó una ______ sobre la calidad del agua».",
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "ipótesis"
+      },
+      {
+        "id": "opt-b",
+        "text": "hipótesis"
+      },
+      {
+        "id": "opt-c",
+        "text": "hipotesis"
+      },
+      {
+        "id": "opt-d",
+        "text": "hipótecis"
+      }
+    ],
+    "answer_key": {
+      "choice_id": "opt-b"
+    },
+    "hints": [
+      "Las palabras que comienzan con el prefijo griego «hipo-» (debajo de, supuesto) siempre se escriben con «h» inicial.",
+      "Además, revisa la acentuación: hi-PÓ-te-sis es esdrújula."
+    ],
+    "explanation": "«Hipótesis» lleva «h» inicial por el prefijo «hipo-» y tilde en la «ó» por ser palabra esdrújula.",
+    "source": "Equipo Axo — UniconHub Hack 2026 (contenido original en español de México; dificultad estimada por expertos)",
+    "tags": [
+      "ortografia",
+      "uso-h",
+      "vocabulario-cientifico"
+    ]
+  },
+  {
+    "id": "spell-homophones-001",
+    "skill_id": "homophones",
+    "subject": "spelling",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "prompt": "Selecciona la opción correcta según el sentido de la oración: «Vamos ______ cómo funciona el prototipo cuando conectemos la batería».",
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "haber"
+      },
+      {
+        "id": "opt-b",
+        "text": "a ver"
+      },
+      {
+        "id": "opt-c",
+        "text": "haver"
+      },
+      {
+        "id": "opt-d",
+        "text": "a ber"
+      }
+    ],
+    "answer_key": {
+      "choice_id": "opt-b"
+    },
+    "hints": [
+      "Distingue entre el verbo auxiliar/impersonal «haber» y la secuencia formada por la preposición «a» más el verbo «ver» (mirar o comprobar).",
+      "Intenta sustituir la expresión por «Vamos a comprobar» o «Vamos a mirar». Si tiene sentido, va separado y con «v»."
+    ],
+    "explanation": "Se escribe «a ver» (preposición «a» + infinitivo «ver») porque expresa la intención de observar o comprobar algo. «Haber» es un verbo distinto.",
+    "source": "Equipo Axo — UniconHub Hack 2026 (contenido original en español de México; dificultad estimada por expertos)",
+    "tags": [
+      "ortografia",
+      "homofonas",
+      "a-ver-vs-haber"
+    ]
+  },
+  {
+    "id": "spell-other-001",
+    "skill_id": "other",
+    "subject": "spelling",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "prompt": "Elige la forma escrita correctamente: «La ______ de paneles solares en el techo tomó dos días de trabajo».",
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "instalación"
+      },
+      {
+        "id": "opt-b",
+        "text": "instalacción"
+      },
+      {
+        "id": "opt-c",
+        "text": "instalasión"
+      },
+      {
+        "id": "opt-d",
+        "text": "instalasion"
+      }
+    ],
+    "answer_key": {
+      "choice_id": "opt-a"
+    },
+    "hints": [
+      "Piensa en palabras de la misma familia: instalar, instalado, instalador. ¿Aparece el grupo «ct» en alguna de ellas?",
+      "Como en su familia no existe «ct» (a diferencia de constructor → construcción), se escribe con una sola «c» en «-ción»."
+    ],
+    "explanation": "«Instalación» se escribe con una sola «c» («-ción») porque en su familia léxica (instalar, instalador) no aparece el grupo consonántico «ct».",
+    "source": "Equipo Axo — UniconHub Hack 2026 (contenido original en español de México; dificultad estimada por expertos)",
+    "tags": [
+      "ortografia",
+      "cion-vs-ccion"
+    ]
+  }
+]
