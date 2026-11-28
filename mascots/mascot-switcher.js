@@ -48,18 +48,28 @@
     return hit ? hit[1] : "idle";
   }
 
+  // Último estado visto en cada contenedor, para detectar cambios
+  // (por ejemplo, de "concentrado" a "con una pista" justo después de fallar).
+  const lastState = new WeakMap();
+
   function sync(svg) {
     // La vista previa de la tienda siempre muestra al ajolote con su ropa.
     if (svg.closest(".customization-stage")) return;
     let img = svg.nextElementSibling;
     if (!img || !img.classList.contains("mascot-alt")) img = null;
 
+    const state = stateOf(svg);
+    const host = svg.parentElement;
+    const prev = lastState.get(host);
+    lastState.set(host, state);
+    const reacted = prev !== undefined && prev !== state && (state === "encourage" || state === "celebrate");
+
     if (current === "axolotl") {
       svg.style.removeProperty("display");
       img?.remove();
+      if (reacted) coach.show(svg, state);
       return;
     }
-    const state = stateOf(svg);
     const src = `${BASE}${current}/${state}.svg`;
     if (!img) {
       img = document.createElement("img");
@@ -72,7 +82,110 @@
       img.src = src;
       img.alt = `${MASCOTS[current]} ${STATE_ES[state]}`;
     }
+    if (reacted) coach.show(img, state);
   }
+
+  // ---------- Globos de diálogo: preguntas que guían, nunca la respuesta ----------
+  const SKILL_QUESTIONS = {
+    suma: ["¿Juntaste primero las unidades? Si pasan de 9, ¿qué haces con la decena que sobra?", "Estima antes de calcular: ¿tu resultado debería ser mayor o menor que 50?"],
+    resta: ["¿Cuál número es mayor? Si arriba hay menos unidades, ¿de dónde puedes tomar una decena?", "Comprueba al revés: si sumas tu resultado y lo que quitaste, ¿regresas al inicio?"],
+    comparacion: ["Compara primero las cifras de la izquierda. ¿Cuál vale más?", "¿Qué diferencia hay entre las dos cantidades? Calcúlala antes de decidir."],
+    multiplicacion: ["¿Cuántos grupos hay y cuántos elementos tiene cada grupo?", "¿Puedes dibujar los grupos o sumar el mismo número varias veces?"],
+    division: ["Si repartes de uno en uno, ¿cuántas vueltas das hasta acabarte todo?", "¿Qué número multiplicado por los grupos te da el total?"],
+    fracciones: ["¿En cuántas partes iguales se dividió el todo? ¿Cuántas partes tomas?", "¿Qué indica el número de abajo y qué indica el de arriba?"],
+    decimales: ["Alinea el punto decimal. ¿Qué cifra está en el lugar de los décimos?", "¿Es lo mismo 0.5 que 0.50? ¿Cuál es mayor, 0.5 o 0.45?"],
+    cambio: ["¿Cuánto había al principio y cuánto se fue? ¿Qué operación une esos datos?", "¿Te preguntan lo que queda o lo que se usó?"],
+    "varios-pasos": ["¿Qué necesitas calcular primero para poder responder la pregunta?", "Escribe tu primer paso. ¿Ese resultado es la respuesta final o solo un dato?"],
+  };
+  const AREA_QUESTIONS = {
+    math: ["¿Puedes estimar el resultado antes de calcular? ¿Tu respuesta se acerca?", "¿Qué operación pide el problema: sumar, restar, multiplicar o dividir?", "Comprueba con la operación inversa: ¿regresas al número inicial?"],
+    reading: ["¿En qué párrafo está la pista? Vuelve a leerlo con calma.", "¿Eso lo dice el texto o lo estás suponiendo?", "Busca una frase del texto que apoye tu respuesta.", "¿Qué pasó antes y qué pasó después en la historia?"],
+    spelling: ["Lee la palabra en voz baja: ¿cómo suena y cómo se escribe?", "¿Conoces otra palabra de la misma familia? Por ejemplo, hoja y hojita.", "¿Dónde está la sílaba que suena más fuerte? ¿Esa regla pide tilde?"],
+    any: ["¿Qué te pide exactamente la pregunta? Léela otra vez.", "¿Qué dato no usaste todavía?"],
+  };
+  const CHEERS = {
+    math: ["¡Muy bien! ¿Cómo lo resolviste? Explícalo con tus palabras.", "¡Lo lograste! ¿Podrías resolverlo de otra forma?"],
+    reading: ["¡Excelente! ¿Qué parte del texto te ayudó a decidir?", "¡Bien leído! ¿Cómo explicarías tu respuesta a un compañero?"],
+    spelling: ["¡Correcto! ¿Qué regla te ayudó a escribirla bien?", "¡Bien! ¿Se te ocurre otra palabra que siga la misma regla?"],
+    any: ["¡Muy bien! ¿Qué paso te ayudó más?"],
+  };
+
+  function routePath() {
+    return location.protocol === "file:" ? location.hash.replace(/^#/, "") : location.pathname;
+  }
+  function context() {
+    const path = routePath();
+    const node = (path.match(/^\/ruta\/([^/?#]+)/) || [])[1];
+    if (node) return { area: node.startsWith("lectura") ? "reading" : "math", skill: node };
+    if (path.startsWith("/matematicas")) return { area: "math" };
+    if (path.startsWith("/lectura")) return { area: "reading" };
+    if (path.startsWith("/ortografia")) return { area: "spelling" };
+    return { area: "any" };
+  }
+  let turn = 0;
+  const pick = (list) => list[turn++ % list.length];
+
+  const coach = (() => {
+    const el = document.createElement("div");
+    el.className = "coach-bubble";
+    el.setAttribute("role", "status");
+    el.hidden = true;
+    let anchor = null;
+    let hideTimer;
+
+    function place() {
+      if (!anchor || el.hidden) return;
+      const r = anchor.getBoundingClientRect();
+      if (!r.width) return hide();
+      const w = el.offsetWidth;
+      const h = el.offsetHeight;
+      const left = Math.min(Math.max(12, r.left + r.width / 2 - w / 2), innerWidth - w - 12);
+      const above = r.top - h - 14 > 8;
+      const top = above ? r.top - h - 14 : r.bottom + 14;
+      el.style.left = `${left}px`;
+      el.style.top = `${top}px`;
+      el.dataset.side = above ? "above" : "below";
+      el.style.setProperty("--tail-x", `${Math.min(Math.max(20, r.left + r.width / 2 - left), w - 20)}px`);
+    }
+    function hide() {
+      el.hidden = true;
+      anchor = null;
+      clearTimeout(hideTimer);
+    }
+    function show(target, state) {
+      const { area, skill } = context();
+      const name = current === "axolotl" ? "Axo" : MASCOTS[current];
+      let title, text;
+      if (state === "celebrate") {
+        title = `${name} dice:`;
+        text = pick(CHEERS[area]);
+      } else {
+        title = `${name} pregunta:`;
+        text = pick(skill && SKILL_QUESTIONS[skill] ? SKILL_QUESTIONS[skill] : AREA_QUESTIONS[area]);
+      }
+      el.innerHTML = "";
+      const t = document.createElement("strong");
+      t.textContent = title;
+      const p = document.createElement("p");
+      p.textContent = text;
+      const close = document.createElement("button");
+      close.type = "button";
+      close.textContent = "Entendido";
+      close.addEventListener("click", hide);
+      el.append(t, p, close);
+      el.dataset.mood = state;
+      anchor = target;
+      el.hidden = false;
+      place();
+      clearTimeout(hideTimer);
+      hideTimer = setTimeout(hide, state === "celebrate" ? 6000 : 12000);
+    }
+    addEventListener("scroll", place, { passive: true });
+    addEventListener("resize", place);
+    addEventListener("hashchange", hide);
+    addEventListener("popstate", hide);
+    return { el, show, hide };
+  })();
 
   function syncAll() {
     document.querySelectorAll("svg.mascot").forEach(sync);
@@ -103,6 +216,18 @@
     .mascot-picker [role=menu] img{width:40px;height:auto}
     .mascot-picker button:focus-visible{outline:3px solid #22d3ee;outline-offset:2px}
     img.mascot-alt{height:auto;display:block}
+    .coach-bubble{position:fixed;z-index:60;width:min(300px,calc(100vw - 24px));padding:12px 14px;background:#f8fafc;color:#1b1630;border-radius:16px;box-shadow:0 12px 32px rgba(0,0,0,.4);font-family:Inter,system-ui,sans-serif;font-size:.95rem;line-height:1.45;animation:coach-in .25s ease-out}
+    .coach-bubble[hidden]{display:none}
+    .coach-bubble strong{display:block;color:#6d28d9;font-size:.85rem}
+    .coach-bubble[data-mood=celebrate] strong{color:#0f766e}
+    .coach-bubble p{margin:4px 0 8px;color:#1b1630}
+    .coach-bubble button{font:inherit;font-weight:700;font-size:.85rem;color:#1b1630;background:#e9e3ff;border:0;border-radius:10px;padding:6px 10px;cursor:pointer}
+    .coach-bubble button:focus-visible{outline:3px solid #22d3ee;outline-offset:2px}
+    .coach-bubble::after{content:"";position:absolute;left:calc(var(--tail-x,50%) - 9px);border:9px solid transparent}
+    .coach-bubble[data-side=above]::after{top:100%;border-top-color:#f8fafc}
+    .coach-bubble[data-side=below]::after{bottom:100%;border-bottom-color:#f8fafc}
+    @keyframes coach-in{from{opacity:0;transform:translateY(6px) scale(.97)}to{opacity:1;transform:none}}
+    @media (prefers-reduced-motion:reduce){.coach-bubble{animation:none}}
   `;
 
   function buildPicker() {
@@ -165,7 +290,7 @@
 
   function start() {
     document.head.append(style);
-    document.body.append(buildPicker());
+    document.body.append(buildPicker(), coach.el);
     syncAll();
     observer.observe(document.getElementById("app") || document.body, {
       subtree: true,
